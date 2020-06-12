@@ -1,0 +1,53 @@
+.Login {
+    background-color: #525259;
+    margin-top: 100px;
+    border: 1px dotted darkgrey;
+    float: center;
+}
+
+
+h2 {
+    text-align: center;
+    color: #F0EBF0;
+  }
+  
+  form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    color: #97A7BA;
+   
+  }
+  
+  label,
+  input {
+    display: block;
+    width: 100%;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    height: 22px;
+  }
+  
+  input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #777;
+  }
+
+  
+  button {
+    padding: 10px 15px;
+    background-color: #E5BDA5;
+    color: #525259;
+    border: 1px solid #6D6981;
+    background-color: 250ms;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: #97A7BA;
+    color:  #525259;
+  }
