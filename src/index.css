@@ -12,3 +12,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#new-btn button {
+  padding: 10px 15px;
+  background-color: #E5BDA5;
+  color: #525259;
+  border: 1px solid #6D6981;
+  background-color: 250ms;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #97A7BA;
+  color:  #525259;
+}

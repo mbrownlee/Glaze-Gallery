@@ -1,0 +1,64 @@
+{
+  "potters": [
+    {
+      "id": 1,
+      "artistName": "Tim See",
+      "email": "tim@see.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "artistName": "Stacy Morgan",
+      "email": "stacy@morgan.com",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "artistName": "Michelle Brown",
+      "email": "michelle@brown.com",
+      "password": "1234"
+    },
+    {
+      "id": 4,
+      "artistName": "Molly Ringwald",
+      "email": "molly@ringwald.com",
+      "password": "1234"
+    },
+    {
+      "name": "Muddy Shoes",
+      "email": "m@m.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "name": "Blue",
+      "email": "b@b.com",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "name": "Ben",
+      "email": "ben@ben.com",
+      "password": "1234",
+      "id": 8
+    },
+    {
+      "name": "Angus",
+      "email": "goose@woof.com",
+      "password": "1234",
+      "id": 9
+    },
+    {
+      "name": "Melissa India",
+      "email": "mel@mel.com",
+      "password": "1234",
+      "id": 10
+    },
+    {
+      "name": "Pink Gummy Bears",
+      "email": "m@m.com",
+      "password": "1234",
+      "id": 11
+    }
+  ]
+}

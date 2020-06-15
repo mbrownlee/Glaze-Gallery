@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    color: #F0EBF0;
+}
+
+.nav-item {
+    padding: 30px;
+    color: #F0EBF0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.nav-item:hover {
+color: #E5BDA5;
+}

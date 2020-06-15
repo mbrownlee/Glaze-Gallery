@@ -1,6 +1,7 @@
 import { Route } from "react-router-dom";
 import React from "react";
 import Login from "./auth/login";
+import CreateUser from "./auth/CreateUesr";
 
 
 const ApplicationViews = (props) => {
@@ -13,6 +14,18 @@ const ApplicationViews = (props) => {
               return <Login />;
             }}
           />
+           <Route
+        path="/potters"
+        render={(props) => {
+          return <Login />;
+        }}
+      />
+           <Route
+        path="/create"
+        render={(props) => {
+          return <CreateUser />;
+        }}
+      />
           </React.Fragment>
   );
 };

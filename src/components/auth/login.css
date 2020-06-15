@@ -1,10 +1,16 @@
 .Login {
     background-color: #525259;
     margin-top: 100px;
-    border: 1px dotted darkgrey;
+    /* border: 1px dotted darkgrey; */
     float: center;
 }
+.form {
+  background-color: #525259;
+}
 
+.form-container {
+  background-color: #525259;
+}
 
 h2 {
     text-align: center;
@@ -38,7 +44,7 @@ h2 {
   }
 
   
-  button {
+  #new-btn button {
     padding: 10px 15px;
     background-color: #E5BDA5;
     color: #525259;
@@ -50,4 +56,15 @@ h2 {
     cursor: pointer;
     background-color: #97A7BA;
     color:  #525259;
+  }
+
+  #new-btn {
+      float: right;
+      margin-right: 10px;
+  }
+
+  .create-new {
+      text-align: center;
+      font-size: larger;
+      color: #97A7BA
   }
