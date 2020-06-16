@@ -60,5 +60,43 @@
       "password": "1234",
       "id": 11
     }
+  ],
+  "pots": [
+    {
+      "id": 1,
+      "potterId": 2,
+      "preFireImg": "url",
+      "finishedImg": "url",
+      "clayId": 1,
+      "techniqueId": 1,
+      "decoration": "underglaze painting",
+      "firingEnvironment": 3,
+      "firingSchedule": "cone 5.5, no hold",
+      "glaze1": "ancient copper",
+      "glaze2": "vert luster",
+      "glaze3": "art deco",
+      "glazeDetails": "3x ancient copper on bottome 2/3, stripe of vert luster in middle, art deco on top and inside...overlapping on each color",
+      "dateFinished": "May 15, 2020"
+     
+    },
+    {
+      "id": 2,
+      "potterId": 4,
+      "preFireImg": "url",
+      "finishedImg": "url",
+      "clayId": 1,
+      "techniqueId": 1,
+      "decoration": "underglaze painting",
+      "firingEnvironment": 3,
+      "firingSchedule": "cone 5.5, no hold",
+      "glaze1": "ancient copper",
+      "glaze2": "vert luster",
+      "glaze3": "art deco",
+      "glazeDetails": "3x ancient copper on bottome 2/3, stripe of vert luster in middle, art deco on top and inside...overlapping on each color",
+      "dateFinished": "May 20, 2020"
+     
+    }
   ]
 }
+
+  
