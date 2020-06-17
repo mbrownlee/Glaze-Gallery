@@ -64,6 +64,7 @@
   "pots": [
     {
       "id": 1,
+      "name": "Ocean Pitcher with Shells",
       "potterId": 2,
       "preFireImg": "url",
       "finishedImg": "url",
@@ -72,15 +73,16 @@
       "decoration": "underglaze painting",
       "firingEnvironment": 3,
       "firingSchedule": "cone 5.5, no hold",
-      "glaze1": "ancient copper",
-      "glaze2": "vert luster",
-      "glaze3": "art deco",
+      "glaze1Id": 12,
+      "glaze2Id": 5,
+      "glaze3Id": 2,
       "glazeDetails": "3x ancient copper on bottome 2/3, stripe of vert luster in middle, art deco on top and inside...overlapping on each color",
       "dateFinished": "May 15, 2020"
      
     },
     {
       "id": 2,
+      "name": "Blue Mug Fancy Handle",
       "potterId": 4,
       "preFireImg": "url",
       "finishedImg": "url",
@@ -89,12 +91,164 @@
       "decoration": "underglaze painting",
       "firingEnvironment": 3,
       "firingSchedule": "cone 5.5, no hold",
-      "glaze1": "ancient copper",
-      "glaze2": "vert luster",
-      "glaze3": "art deco",
+      "glaze1Id": 16,
+      "glaze2Id": 1,
+      "glaze3Id": 4,
       "glazeDetails": "3x ancient copper on bottome 2/3, stripe of vert luster in middle, art deco on top and inside...overlapping on each color",
       "dateFinished": "May 20, 2020"
      
+    }
+  ],
+  "firingEnvironments": [
+    {
+      "id": 1,
+      "firingEnvironment": "Oxidation Firing"
+    },
+    {
+      "id": 2,
+      "firingEnvironment": "Reduction Firing"
+    },
+    {
+      "id": 3,
+      "firingEnvironment": "Wood Firing"
+    },
+    {
+      "id": 4,
+      "firingEnvironment": "Salt/Soda Firing"
+    },
+    {
+      "id": 5,
+      "firingEnvironment": "Raku Firing"
+    },
+    {
+      "id": 6,
+      "firingEnvironment": "Pit Firing"
+    }
+  ],
+  "techniques": [
+    {
+      "id": 1,
+      "technique": "Wheel Thrown"
+    },
+    {
+      "id": 2,
+      "technique": "Hand Built"
+    },
+    {
+      "id": 3,
+      "technique": "Slip Cast"
+    },
+    {
+      "id": 4,
+      "technique": "Sculpture"
+    }
+  ],
+  "clays": [
+    {
+      "id": 1,
+      "clay": "Laguna Soldate #60"
+    },
+    {
+      "id": 2,
+      "clay": "Kentucky Mudworks Brown Bear"
+    },
+    {
+      "id": 3,
+      "clay": "Laguna Light Buff #55"
+    },
+    {
+      "id": 4,
+      "clay": "Standard Ceramics Red Clay w/ Grog"
+    },
+    {
+      "id": 5,
+      "clay": "Laguna Speckled Buff"
+    },
+    {
+      "id": 6,
+      "clay": "Kentucky Mudworks Speckled Turtle"
+    },
+    {
+      "id": 7,
+      "clay": "Laguna Red Stone"
+    },
+    {
+      "id": 8,
+      "clay": "Laguna Dark Brown"
+    },
+    {
+      "id": 9,
+      "clay": "Laguna Danish White"
+    },
+    {
+      "id": 10,
+      "clay": "Laguna Raku #250"
+    }
+  ],
+  "glazes": [
+    {
+      "id": 1,
+      "glaze": "Temmoku Potter's Choice PC-30"
+    },
+    {
+      "id": 2,
+      "glaze": "Blue Rutile Potter's Choice PC-20"
+    },
+    {
+      "id": 3,
+      "glaze": "Oatmeal Potter's Choice PC-31"
+    },
+    {
+      "id": 4,
+      "glaze": "Sapphire Float Potter's Choice PC-24"
+    },
+    {
+      "id": 5,
+      "glaze": "Art Deco Green Potter's Choice PC-48"
+    },
+    {
+      "id": 6,
+      "glaze": "Iron Yellow Potter's Choice PC-38"
+    },
+    {
+      "id": 7,
+      "glaze": "Ancient Copper Potter's Choice PC-56"
+    },
+    {
+      "id": 8,
+      "glaze": "Marigold Amaco Celadon C-60"
+    },
+    {
+      "id": 9,
+      "glaze": "Mulberry Amaco Celadon C-57"
+    },
+    {
+      "id": 10,
+      "glaze": "Snapdragon Amaco Celadon C-54"
+    },
+    {
+      "id": 11,
+      "glaze": "Pear Amaco Celadon C-41"
+    },
+    {
+      "id": 12,
+      "glaze": "Snow Amaco Celadon C-10"
+    },
+    {
+      "id": 13,
+      "glaze": "Zinc Free Amaco Clear HF-9"
+    },
+    {
+      "id": 14,
+      "glaze": "Sea Spray Opulence 607"
+    },
+    {
+      "id": 15,
+      "glaze": "Autumn Frost Opulence 601"
+    },
+    {
+      "id": 16,
+      "glaze": "Mountain Mist Opulence 606"
     }
   ]
 }
