@@ -4,6 +4,7 @@ import Login from "./auth/login";
 import CreateUser from "./auth/CreateUesr";
 import PotList from "./pots/PotList";
 import PotDetails from "./pots/PotDetails";
+import PotForm from "./pots/PotForm";
 
 
 const ApplicationViews = (props) => {
@@ -33,6 +34,12 @@ const ApplicationViews = (props) => {
         path="/pots"
         render={(props) => {
             return <PotList {...props} />;
+        }}
+      />
+      <Route
+        path="/pots/new"
+        render={(props) => {
+          return <PotForm {...props} />;
         }}
       />
       <Route

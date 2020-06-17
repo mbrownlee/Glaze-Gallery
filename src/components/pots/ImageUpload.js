@@ -10,13 +10,13 @@ const ImageSettings = (props) => {
         url: "",
       });
     
-      const addNewPot = (evt) => {
+      const addNewPotPic = (evt) => {
        
           setLoading(true);
           const newPot = { ...pots };
-          newPot.url = image;
+          newPot.finishedImg = image;
           API.addImage(newPot).then(() =>
-            props.history.push("/mypots")
+            props.history.push("/pots")
           );
         }
 
@@ -61,7 +61,7 @@ const ImageSettings = (props) => {
               onChange={handleFieldChange}
               type="text"
               id="title"
-              placeholder="Descriptive Title (e.g. dark blue mug"
+              placeholder="Descriptive Title (e.g. dark blue mug)"
             />
           </div>
           <section>
@@ -70,7 +70,7 @@ const ImageSettings = (props) => {
                 type="button"
                 className="right"
                 disabled={""}
-                onClick={addNewPot}
+                onClick={addNewPotPic}
               > Add Pot
               </button>
             </div>

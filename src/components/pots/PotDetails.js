@@ -7,6 +7,7 @@ import ImageSettings from "./ImageUpload"
 const PotDetail = (props) => {
   const [pot, setPot] = useState({
     potterId: "",
+    name: "",
     preFireImg: "", 
     finishedImg: "", 
     clayId: "",
@@ -14,7 +15,9 @@ const PotDetail = (props) => {
     decoration: "",
     firingEnvironment: "",
     firingSchedule: "",
-    glaze: "",
+    glaze1Id: "",
+    glaze2Id: "",
+    glaze3Id: "",
     glazeDetails: "",
     dateFinished: "",
     Private: ""
@@ -48,18 +51,24 @@ const PotDetail = (props) => {
       <div className="card-content">
       
         <h1>My Pot</h1>
-       {/* <p>{pot.potterId}</p>  */}
-   <p> preFireImg: "", 
-    finishedImg: "", 
-    clayId: "",
-    techniqueId: "", 
-    decoration: "",
-    firingEnvironment: "",
-    firingSchedule: "",
-    glaze: "",
-    glazeDetails: "",
-    dateFinished: "",
-    Private: ""</p>
+        <h3>Pot Name: {pot.name}</h3>
+        <p>Artist: {pot.potterId}</p>  
+        <p>Clay: {pot.clayId}</p>  
+        <p>Technique: {pot.techniqueId}</p> 
+        <p>Decorative enhancements: {pot.decoration}</p> 
+        <p>Firing Environment: {pot.firingEnvironment}</p> 
+        <p>Firing Schedule: {pot.firingSchedule}</p> 
+        <p>Technique: {pot.techniqueId}</p> 
+        <p>Primary Glaze: {pot.glaze1Id}</p>  
+        <p>Second Glaze: {pot.glaze2Id}</p>  
+        <p>Third Glaze: {pot.glaze3Id}</p>  
+        <p>Glaze Details: {pot.glazeDetails}</p>  
+        <p>Date Completed: {pot.dateFinished}</p>  
+        <p>Glazed Pot before firing: {pot.preFireImg}</p>  
+        <p>Completed Pot: {pot.finishedImg}</p>  
+        
+        {/* <p>Keep details private or share with community?: {pot.Private}</p>   */}
+   
       <ImageSettings />
     
         {/* <div className="edit">
