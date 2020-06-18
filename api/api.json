@@ -112,6 +112,23 @@
       "glazeDetails": "lafkjsdfkasd",
       "dateFinished": "2020-06-18",
       "id": 3
+    },
+    {
+      "potterId": "",
+      "name": "fsgsdfgs",
+      "preFireImg": "",
+      "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592498285/GlazeProject/cbdc2awr1jx0xl8wfyq6.jpg",
+      "clayId": 3,
+      "techniqueId": 2,
+      "decoration": "sdfgsfg",
+      "firingEnvironmentId": 2,
+      "firingSchedule": "sdfgsf",
+      "glaze1Id": 3,
+      "glaze2Id": 8,
+      "glaze3Id": 10,
+      "glazeDetails": "gsdfhgsdf",
+      "dateFinished": "2020-06-18",
+      "id": 5
     }
   ],
   "firingEnvironments": [

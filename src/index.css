@@ -30,3 +30,8 @@ button:hover {
   width: 7rem;
   height: 7rem;
 }
+
+.donePot {
+  max-width: 12rem;
+  max-height: auto;
+}

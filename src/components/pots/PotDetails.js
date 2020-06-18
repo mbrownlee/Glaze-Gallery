@@ -65,11 +65,11 @@ const PotDetail = (props) => {
         <p>Glaze Details: {pot.glazeDetails}</p>  
         <p>Date Completed: {pot.dateFinished}</p>  
         <p>Glazed Pot before firing: {pot.preFireImg}</p>  
-        <p>Completed Pot: {pot.finishedImg}</p>  
+        <p>Completed Pot: <img className="donePot" src={pot.finishedImg}/></p>  
         
         {/* <p>Keep details private or share with community?: {pot.Private}</p>   */}
    
-      <ImageSettings />
+      
     
         {/* <div className="edit">
           <button

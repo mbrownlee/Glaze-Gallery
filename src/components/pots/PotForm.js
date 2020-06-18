@@ -9,6 +9,7 @@ import {
   FormText,
 } from "reactstrap";
 import API from "../../modules/fetch";
+import ImageSettings from "./ImageUpload";
 
 const PotForm = (props) => {
   const [pot, setPot] = useState({
@@ -32,6 +33,7 @@ const PotForm = (props) => {
   const [techniques, setTechniques] = useState([]);
   const [firingEnvironments, setFiringEnvironments] = useState([]);
   const [glazes, setGlazes] = useState([]);
+  const [image, setImage] = useState("");
 
   const getClays = () => {
     return API.getClays().then((clays) => {
@@ -85,7 +87,7 @@ const PotForm = (props) => {
       potterId: "",
       name: pot.name,
       preFireImg: "",
-      finishedImg: "",
+      finishedImg: image,
       clayId: parseInt(pot.clayId),
       techniqueId: parseInt(pot.techniqueId),
       decoration: pot.decoration,
@@ -326,7 +328,8 @@ const PotForm = (props) => {
           File
         </Label>
         <Col sm={10}>
-          <Input type="file" name="file" id="exampleFile" />
+          {/* <Input type="file" name="finishedImg" id="finishedImg"  <ImageSettings /> /> */}  <ImageSettings type="file" name="finishedImg" id="finishedImg" setImage={setImage}/>
+
         </Col>
       </FormGroup>
       <FormGroup check row>
