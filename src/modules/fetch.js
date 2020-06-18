@@ -1,6 +1,6 @@
 const API = {
   createNew(potterObject) {
-    return fetch("http://localhost:5002/potters", {
+    return fetch("http://localhost:5002/pots", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

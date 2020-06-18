@@ -26,3 +26,7 @@ button:hover {
   background-color: #97A7BA;
   color:  #525259;
 }
+.placeholder {
+  width: 7rem;
+  height: 7rem;
+}

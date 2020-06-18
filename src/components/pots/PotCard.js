@@ -16,7 +16,7 @@ const potCard = (props) => {
    
     <div>
       <Card>
-        <CardImg src="./placeholder.jpg" alt="pitcher" />
+        <CardImg className="placeholder" src={require("./placeholder.jpg")} alt="pitcher" />
         <CardBody>
           <CardTitle>Pot Title</CardTitle>
           <CardSubtitle>Artist Name</CardSubtitle>

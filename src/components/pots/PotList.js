@@ -31,7 +31,7 @@ const PotList = (props) => {
         {pots.map((pot) => (
           <PotCard
             key={pot.id}
-            // pot={pot}
+            pot={pot}
             // deleteAnimal={deleteAnimal}
             {...props}
           />
