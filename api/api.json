@@ -129,6 +129,40 @@
       "glazeDetails": "gsdfhgsdf",
       "dateFinished": "2020-06-18",
       "id": 5
+    },
+    {
+      "potterId": "",
+      "name": "Seaside Pitcher",
+      "preFireImg": "",
+      "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592499808/GlazeProject/sg6lwtgjxv1lkwvww5bx.jpg",
+      "clayId": 3,
+      "techniqueId": 1,
+      "decoration": "fondant mold seashells",
+      "firingEnvironmentId": 1,
+      "firingSchedule": "hot cone 5, no hold, no soak, propped 2 hours.",
+      "glaze1Id": 14,
+      "glaze2Id": 3,
+      "glaze3Id": 6,
+      "glazeDetails": "dipped Sea Spray x1, brushed iron yellow x3 with slight overlap, dipped oatmeal and poured into inside",
+      "dateFinished": "2019-02-05",
+      "id": 6
+    },
+    {
+      "potterId": "",
+      "name": "Shot glasses",
+      "preFireImg": "https://res.cloudinary.com/michellemb/image/upload/v1592506739/GlazeProject/kpi4rpszmhvi8frwjivp.jpg",
+      "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592506746/GlazeProject/qeondfdsmjda2ngyr14v.jpg",
+      "clayId": 3,
+      "techniqueId": 1,
+      "decoration": "Underglaze, handpainted greenware",
+      "firingEnvironmentId": 1,
+      "firingSchedule": "hot cone 5, no hold, no soak, propped 2 hours.",
+      "glaze1Id": 13,
+      "glaze2Id": null,
+      "glaze3Id": null,
+      "glazeDetails": "3 thin brushed light coats clear",
+      "dateFinished": "2018-03-03",
+      "id": 7
     }
   ],
   "firingEnvironments": [

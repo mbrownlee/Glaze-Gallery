@@ -11,19 +11,14 @@ import {
 } from "reactstrap";
 
 const potCard = (props) => {
- 
   return (
-   
     <div>
       <Card>
-        <CardImg className="placeholder" src={require("./placeholder.jpg")} alt="pitcher" />
+        <CardImg className="donePot" src={props.pot.finishedImg} />
         <CardBody>
-          <CardTitle>Pot Title</CardTitle>
+          <CardTitle>{props.pot.name}</CardTitle>
           <CardSubtitle>Artist Name</CardSubtitle>
-
-          {/* <Link to={`/pots/${props.pot.id}`}> */}
-            <Button href={`/pots/${props.pot.id}`}>Pot Details</Button>{" "}
-            {/* </Link> */}
+          <Button href={`/pots/${props.pot.id}`}>Pot Details</Button>{" "}
         </CardBody>
       </Card>
     </div>

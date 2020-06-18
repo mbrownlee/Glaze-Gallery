@@ -10,6 +10,7 @@ import {
 } from "reactstrap";
 import API from "../../modules/fetch";
 import ImageSettings from "./ImageUpload";
+import ImageSettings2 from "./ImageUpload2";
 
 const PotForm = (props) => {
   const [pot, setPot] = useState({
@@ -34,6 +35,7 @@ const PotForm = (props) => {
   const [firingEnvironments, setFiringEnvironments] = useState([]);
   const [glazes, setGlazes] = useState([]);
   const [image, setImage] = useState("");
+  const [image2, setImage2] = useState("");
 
   const getClays = () => {
     return API.getClays().then((clays) => {
@@ -86,7 +88,7 @@ const PotForm = (props) => {
     const newPot = {
       potterId: "",
       name: pot.name,
-      preFireImg: "",
+      preFireImg: image2,
       finishedImg: image,
       clayId: parseInt(pot.clayId),
       techniqueId: parseInt(pot.techniqueId),
@@ -324,12 +326,25 @@ const PotForm = (props) => {
         </Col>
       </FormGroup>
       <FormGroup row>
-        <Label for="exampleFile" sm={2}>
-          File
-        </Label>
+        <Label for="exampleFile" sm={2}></Label>
         <Col sm={10}>
-          {/* <Input type="file" name="finishedImg" id="finishedImg"  <ImageSettings /> /> */}  <ImageSettings type="file" name="finishedImg" id="finishedImg" setImage={setImage}/>
-
+          <ImageSettings2
+            type="file"
+            name="preFireImg"
+            id="preFireImg"
+            setImage2={setImage2}
+          />
+        </Col>
+      </FormGroup>
+      <FormGroup row>
+        <Label for="exampleFile" sm={2}></Label>
+        <Col sm={10}>
+          <ImageSettings
+            type="file"
+            name="finishedImg"
+            id="finishedImg"
+            setImage={setImage}
+          />
         </Col>
       </FormGroup>
       <FormGroup check row>

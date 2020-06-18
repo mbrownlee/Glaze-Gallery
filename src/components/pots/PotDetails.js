@@ -56,7 +56,7 @@ const PotDetail = (props) => {
         <p>Clay: {pot.clayId}</p>  
         <p>Technique: {pot.techniqueId}</p> 
         <p>Decorative enhancements: {pot.decoration}</p> 
-        <p>Firing Environment: {pot.firingEnvironment}</p> 
+        <p>Firing Environment: {pot.firingEnvironmentId}</p> 
         <p>Firing Schedule: {pot.firingSchedule}</p> 
         <p>Technique: {pot.techniqueId}</p> 
         <p>Primary Glaze: {pot.glaze1Id}</p>  
@@ -64,7 +64,7 @@ const PotDetail = (props) => {
         <p>Third Glaze: {pot.glaze3Id}</p>  
         <p>Glaze Details: {pot.glazeDetails}</p>  
         <p>Date Completed: {pot.dateFinished}</p>  
-        <p>Glazed Pot before firing: {pot.preFireImg}</p>  
+        <p>Glazed Pot before firing: <img className="donePot" src={pot.preFireImg}/></p>  
         <p>Completed Pot: <img className="donePot" src={pot.finishedImg}/></p>  
         
         {/* <p>Keep details private or share with community?: {pot.Private}</p>   */}
