@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   Card,
   CardImg,
@@ -8,12 +7,17 @@ import {
   CardTitle,
   CardSubtitle,
   Button,
+  Row,
+  Col
 } from "reactstrap";
 
 const potCard = (props) => {
   return (
     <div>
+     <Row>
+     <Col sm="4">
       <Card>
+     
         <CardImg className="donePot" src={props.pot.finishedImg} />
         <CardBody>
           <CardTitle>{props.pot.name}</CardTitle>
@@ -21,6 +25,8 @@ const potCard = (props) => {
           <Button href={`/pots/${props.pot.id}`}>Pot Details</Button>{" "}
         </CardBody>
       </Card>
+      </Col>
+      </Row>
     </div>
   );
 };

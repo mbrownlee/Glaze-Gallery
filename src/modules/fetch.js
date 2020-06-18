@@ -9,11 +9,12 @@ const API = {
     }).then((results) => results.json());
   },
 
-  // getPotter(credentials) {
-  //   return fetch(
-  //     `http://localhost:5002/potterss?email=${credentials.email}&password=${credentials.password}`
-  //   ).then((results) => results.json());
-  // },
+  getPotter(credentials) {
+    return fetch(
+      `http://localhost:5002/potterss?email=${credentials.email}&password=${credentials.password}`
+    ).then((results) => results.json());
+  },
+
   getPot(id) {
     return fetch(`http://localhost:5002/pots/${id}`).then((result) =>
       result.json()

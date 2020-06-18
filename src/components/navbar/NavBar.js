@@ -3,6 +3,10 @@ import { Nav, NavItem, NavLink } from "reactstrap";
 import "./NavBar.css";
 
 const NavBar = (props) => {
+  const handleLogout = () => {
+		props.clearEmployee();
+		props.history.push("/");
+	};
   return (
     <div>
       <h1 className="nav-title">Glaze Gallery</h1>
@@ -13,7 +17,7 @@ const NavBar = (props) => {
         <NavLink className="nav-item" href="pots">
           Gallery
         </NavLink>{" "}
-        <NavLink className="nav-item" to="/">
+        <NavLink className="nav-item" onClick={handleLogout} href="/">
           Logout
         </NavLink>
         

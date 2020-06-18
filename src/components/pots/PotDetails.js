@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import API from "../../modules/fetch";
-import ImageSettings from "./ImageUpload"
+
 
 
 
