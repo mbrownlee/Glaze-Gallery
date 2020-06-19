@@ -13,24 +13,27 @@ const PotDetail = (props) => {
   clayId: "",
   techniqueId: "", 
   decoration: "",
-  firingEnvironment: "",
+  firingEnvironment: {},
   firingSchedule: "",
   glaze1Id: "",
   glaze2Id: "",
   glaze3Id: "",
   glazeDetails: "",
   dateFinished: "",
-  clay:{}});
+  clay:{},
+potter:{},
+technique:{}
+});
 //   const [productTypesWithLocation, setProductTypesWithLocation] = useState([]);
 
-  useEffect(() => {
-    API.getPot(props.match.params.potId).then(
-      (APIResult) => {
-        console.log(APIResult, "what you want");
-        setPot(APIResult);
-      }
-    );
-  }, [props.match.params.potId]);
+  // useEffect(() => {
+  //   API.getPot(props.match.params.potId).then(
+  //     (APIResult) => {
+  //       console.log(APIResult, "what you want");
+  //       setPot(APIResult);
+  //     }
+  //   );
+  // }, [props.match.params.potId]);
 
   const handleDelete = () => {
     API.deletePot(props.match.params.potId).then(() =>
@@ -38,7 +41,7 @@ const PotDetail = (props) => {
     );
   };
   useEffect(() => {
-    API.getPotWithClay(props.match.params.potId).then(
+    API.getPotWithDetails(props.match.params.potId).then(
       (result) => {
         console.log(result, "clay");
         setPot(result);
@@ -61,13 +64,12 @@ const PotDetail = (props) => {
       
         <h1>My Pot</h1>
         <h3>Pot Name: {pot.name}</h3>
-        <p>Artist: {pot.potterId}</p>  
+        <p>Artist: {pot.potter.artistName}</p>  
         <p>Clay: {pot.clay.clay}</p>  
-        <p>Technique: {pot.techniqueId}</p> 
+        <p>Technique: {pot.technique.technique}</p> 
         <p>Decorative enhancements: {pot.decoration}</p> 
-        <p>Firing Environment: {pot.firingEnvironmentId}</p> 
+        <p>Firing Environment: {pot.firingEnvironment.firingEnvironment}</p> 
         <p>Firing Schedule: {pot.firingSchedule}</p> 
-        <p>Technique: {pot.techniqueId}</p> 
         <p>Primary Glaze: {pot.glaze1Id}</p>  
         <p>Second Glaze: {pot.glaze2Id}</p>  
         <p>Third Glaze: {pot.glaze3Id}</p>  

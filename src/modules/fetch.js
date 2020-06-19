@@ -23,9 +23,9 @@ const API = {
   getAllPots() {
     return fetch("http://localhost:5002/pots").then((result) => result.json());
   },
-  getPotWithClay(id) {
+  getPotWithDetails(id) {
     return fetch(
-      `http://localhost:5002/pots/${id}?_expand=clay`
+      `http://localhost:5002/pots/${id}?_expand=clay&_expand=firingEnvironment&_expand=technique&_expand=potter`
     ).then((result) => result.json());
   },
   deletePot(id) {
