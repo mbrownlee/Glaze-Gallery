@@ -11,7 +11,7 @@ const API = {
 
   getPotter(credentials) {
     return fetch(
-      `http://localhost:5002/potterss?email=${credentials.email}&password=${credentials.password}`
+      `http://localhost:5002/potters?email=${credentials.email}&password=${credentials.password}`
     ).then((results) => results.json());
   },
 

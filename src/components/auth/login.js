@@ -16,12 +16,12 @@ import CreateUser from "./CreateUesr";
 import API from "../../modules/fetch";
 
 const Login = (props) => {
-  const [potter, setPotter] = useState([]);
+  // const [potter, setPotter] = useState([]);
   const [credentials, setCredentials] = useState({
     email: "",
     password: "",
   });
-  
+
   const handleFieldChange = (evt) => {
     const stateToChange = { ...credentials };
     stateToChange[evt.target.id] = evt.target.value;
@@ -29,15 +29,14 @@ const Login = (props) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    debugger;
     if (credentials.email === "" || credentials.password === "") {
       window.alert("Please Login - email and password required");
     } else {
       API.getPotter(credentials).then((potter) => {
-        if (credentials.email !== potter.email) {
+        if (credentials.email !== potter[0].email) {
           window.alert("No account. Create account.");
         } else {
-          props.setPotter(potter.id);
+          localStorage.setItem("currentPotter", potter[0].id);
           props.history.push("/pots");
         }
       });
