@@ -20,7 +20,7 @@ const potCard = (props) => {
      
         <CardImg className="donePot" src={props.pot.finishedImg} />
         <CardBody>
-          <CardTitle>{props.pot.name}</CardTitle>
+          <CardTitle><h3>{props.pot.name}</h3></CardTitle>
           <CardSubtitle>Artist Name</CardSubtitle>
           <Button href={`/pots/${props.pot.id}`}>Pot Details</Button>{" "}
         </CardBody>

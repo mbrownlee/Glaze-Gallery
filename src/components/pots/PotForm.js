@@ -86,7 +86,7 @@ const PotForm = (props) => {
 
   const constructNewPot = (evt) => {
     const newPot = {
-      potterId: "",
+      potterId: props.currentPotter.id,
       name: pot.name,
       preFireImg: image2,
       finishedImg: image,
@@ -110,14 +110,14 @@ const PotForm = (props) => {
     potterId: pot.potterId,
     preFireImg: pot.preFireImg,
     finishedImg: pot.finishedImg,
-    clayId: pot.clayId,
-    techniqueId: pot.techniqueId,
+    clayId: parseInt(pot.clayId),
+    techniqueId: parseInt(pot.techniqueId),
     decoration: pot.decoration,
-    firingEnvironment: pot.firingEnvironment,
+    firingEnvironmentId: parseInt(pot.firingEnvironmentId),
     firingSchedule: pot.firingSchedule,
-    glaze1: pot.glaze1,
-    glaze2: pot.glaze2,
-    glaze3: pot.glaze3,
+    glaze1Id: parseInt(pot.glaze1Id),
+    glaze2Id: parseInt(pot.glaze2Id),
+    glaze3Id: parseInt(pot.glaze3Id),
     glazeDetails: pot.glazeDetails,
     dateFinished: pot.dateFinished,
   };
@@ -150,6 +150,7 @@ const PotForm = (props) => {
             type="text"
             name="name"
             id="name"
+            value={pot.name}
             placeholder="Descriptive name for pot"
           />
         </Col>
@@ -161,7 +162,7 @@ const PotForm = (props) => {
             onChange={handleFieldChange}
             type="select"
             name="clayId"
-            defaultValue={pot.clayId}
+            defaultValue={pot.clayId} 
             id="clayId"
           >
             <option value="">Type of Clay</option>
@@ -202,6 +203,7 @@ const PotForm = (props) => {
             type="text"
             name="decoration"
             id="decoration"
+            value={pot.decoration}
             placeholder="Describe embellishments (e.g. scraffito, faceting, underglaze)"
           />
         </Col>
@@ -272,6 +274,7 @@ const PotForm = (props) => {
             onChange={handleFieldChange}
             type="textarea"
             name="text"
+            value={pot.glazeDetails}
             id="glazeDetails"
           />
           <FormText color="black">
@@ -307,6 +310,7 @@ const PotForm = (props) => {
             type="text"
             name="firingSchedule"
             id="firingSchedule"
+            value={pot.firingSchedule}
             placeholder="Firing Schedule (e.g. cone 5, 10 min hold"
           />
         </Col>
@@ -321,6 +325,7 @@ const PotForm = (props) => {
             type="date"
             name="date"
             id="dateFinished"
+            value={pot.dateFinished}
             placeholder="Date Pot Completed"
           />
         </Col>
@@ -332,6 +337,7 @@ const PotForm = (props) => {
             type="file"
             name="preFireImg"
             id="preFireImg"
+            value={pot.preFireImg}
             setImage2={setImage2}
           />
         </Col>
@@ -343,6 +349,7 @@ const PotForm = (props) => {
             type="file"
             name="finishedImg"
             id="finishedImg"
+            value={pot.finishedImg}
             setImage={setImage}
           />
         </Col>

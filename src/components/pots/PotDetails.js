@@ -6,22 +6,21 @@ import API from "../../modules/fetch";
 
 const PotDetail = (props) => {
   const [pot, setPot] = useState({
-    potterId: "",
-    name: "",
-    preFireImg: "", 
-    finishedImg: "", 
-    clayId: "",
-    techniqueId: "", 
-    decoration: "",
-    firingEnvironment: "",
-    firingSchedule: "",
-    glaze1Id: "",
-    glaze2Id: "",
-    glaze3Id: "",
-    glazeDetails: "",
-    dateFinished: "",
-    Private: ""
-  });
+     potterId: "",
+  name: "",
+  preFireImg: "", 
+  finishedImg: "", 
+  clayId: "",
+  techniqueId: "", 
+  decoration: "",
+  firingEnvironment: "",
+  firingSchedule: "",
+  glaze1Id: "",
+  glaze2Id: "",
+  glaze3Id: "",
+  glazeDetails: "",
+  dateFinished: "",
+  clay:{}});
 //   const [productTypesWithLocation, setProductTypesWithLocation] = useState([]);
 
   useEffect(() => {
@@ -33,18 +32,28 @@ const PotDetail = (props) => {
     );
   }, [props.match.params.potId]);
 
-//   useEffect(() => {
-//     ProductTypeManager.getByProduct(props.match.params.productId).then(
-//       (APIResult) => {
-//         setProductTypesWithLocation(APIResult);
-//       }
-//     );
-//   }, [props.match.params.prodctId]);
-//   const handleDelete = () => {
-//     ProductManager.delete(props.productId).then(() =>
-//       props.history.push("/products")
-//     );
-//   };
+  const handleDelete = () => {
+    API.deletePot(props.match.params.potId).then(() =>
+      props.history.push("/pots")
+    );
+  };
+  useEffect(() => {
+    API.getPotWithClay(props.match.params.potId).then(
+      (result) => {
+        console.log(result, "clay");
+        setPot(result);
+      }
+    );
+  }, [props.match.params.potId]);
+
+  // useEffect(() => {
+  //   ProductTypeManager.getByProduct(props.match.params.productId).then(
+  //     (APIResult) => {
+  //       setProductTypesWithLocation(APIResult);
+  //     }
+  //   );
+  // }, [props.match.params.prodctId]);
+
 
   return (
     <div className="card">
@@ -53,7 +62,7 @@ const PotDetail = (props) => {
         <h1>My Pot</h1>
         <h3>Pot Name: {pot.name}</h3>
         <p>Artist: {pot.potterId}</p>  
-        <p>Clay: {pot.clayId}</p>  
+        <p>Clay: {pot.clay.clay}</p>  
         <p>Technique: {pot.techniqueId}</p> 
         <p>Decorative enhancements: {pot.decoration}</p> 
         <p>Firing Environment: {pot.firingEnvironmentId}</p> 
@@ -68,22 +77,20 @@ const PotDetail = (props) => {
         <p>Completed Pot: <img className="donePot" src={pot.finishedImg}/></p>  
         
         {/* <p>Keep details private or share with community?: {pot.Private}</p>   */}
-   
-      
-    
-        {/* <div className="edit">
+
+        <div className="edit">
           <button
             type="button"
-            onClick={() => props.history.push(`/products/${product.id}/edit`)}
+            onClick={() => props.history.push(`/pots/${pot.id}/edit`)}
           >
-            Edit Product
+            Update Pot
           </button>
         </div>
         <div className="delete">
           <button type="button" onClick={handleDelete}>
-            Delete Product
+            Delete Pot
           </button>
-        </div> */}
+        </div>
       </div>
     </div>
   );

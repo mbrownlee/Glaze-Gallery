@@ -63,44 +63,10 @@
   ],
   "pots": [
     {
-      "id": 1,
-      "name": "Ocean Pitcher with Shells",
-      "potterId": 2,
-      "preFireImg": "url",
-      "finishedImg": "url",
-      "clayId": 1,
-      "techniqueId": 1,
-      "decoration": "underglaze painting",
-      "firingEnvironmentId": 3,
-      "firingSchedule": "cone 5.5, no hold",
-      "glaze1Id": 12,
-      "glaze2Id": 5,
-      "glaze3Id": 2,
-      "glazeDetails": "3x ancient copper on bottome 2/3, stripe of vert luster in middle, art deco on top and inside...overlapping on each color",
-      "dateFinished": "May 15, 2020"
-    },
-    {
-      "id": 2,
-      "name": "Blue Mug Fancy Handle",
-      "potterId": 4,
-      "preFireImg": "url",
-      "finishedImg": "url",
-      "clayId": 1,
-      "techniqueId": 1,
-      "decoration": "underglaze painting",
-      "firingEnvironmentid": 3,
-      "firingSchedule": "cone 5.5, no hold",
-      "glaze1Id": 16,
-      "glaze2Id": 1,
-      "glaze3Id": 4,
-      "glazeDetails": "3x ancient copper on bottome 2/3, stripe of vert luster in middle, art deco on top and inside...overlapping on each color",
-      "dateFinished": "May 20, 2020"
-    },
-    {
-      "potterId": "",
+      "potterId": 3,
       "name": "Pink mug",
       "preFireImg": "",
-      "finishedImg": "",
+      "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592498285/GlazeProject/cbdc2awr1jx0xl8wfyq6.jpg",
       "clayId": 4,
       "techniqueId": 2,
       "decoration": "adfljkasdf",
@@ -114,7 +80,7 @@
       "id": 3
     },
     {
-      "potterId": "",
+      "potterId": 2,
       "name": "fsgsdfgs",
       "preFireImg": "",
       "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592498285/GlazeProject/cbdc2awr1jx0xl8wfyq6.jpg",
@@ -131,7 +97,7 @@
       "id": 5
     },
     {
-      "potterId": "",
+      "potterId": 1,
       "name": "Seaside Pitcher",
       "preFireImg": "",
       "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592499808/GlazeProject/sg6lwtgjxv1lkwvww5bx.jpg",
@@ -148,7 +114,7 @@
       "id": 6
     },
     {
-      "potterId": "",
+      "potterId": 4,
       "name": "Shot glasses",
       "preFireImg": "https://res.cloudinary.com/michellemb/image/upload/v1592506739/GlazeProject/kpi4rpszmhvi8frwjivp.jpg",
       "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592506746/GlazeProject/qeondfdsmjda2ngyr14v.jpg",

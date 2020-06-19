@@ -23,6 +23,25 @@ const API = {
   getAllPots() {
     return fetch("http://localhost:5002/pots").then((result) => result.json());
   },
+  getPotWithClay(id) {
+    return fetch(
+      `http://localhost:5002/pots/${id}?_expand=clay`
+    ).then((result) => result.json());
+  },
+  deletePot(id) {
+    return fetch(`http://localhost:5002/pots/${id}`, {
+      method: "DELETE",
+    }).then((result) => result.json());
+  },
+  updateExistingPot(editedPot) {
+    return fetch(`http://localhost:5002/pots/${editedPot.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(editedPot),
+    }).then((result) => result.json());
+  },
 
   getClays() {
     return fetch("http://localhost:5002/clays").then((result) => result.json());
