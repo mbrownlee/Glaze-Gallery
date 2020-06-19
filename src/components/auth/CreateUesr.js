@@ -4,14 +4,10 @@ import API from "../../modules/fetch";
 import "./login.css";
 
 const CreateUser = (props) => {
-  //   const {
-  //     buttonLabel,
-  //     className
-  //   } = props;
   const [potter, setPotter] = useState({
     artistName: "",
     email: "",
-    password: ""
+    password: "",
   });
   const [modal, setModal] = useState(false);
 
@@ -21,7 +17,6 @@ const CreateUser = (props) => {
     setPotter(stateToChange);
   };
   const newPotter = (evt) => {
-    // debugger;
     evt.preventDefault();
     if (
       potter.artistName === "" ||
@@ -35,10 +30,10 @@ const CreateUser = (props) => {
         email: potter.email,
         password: potter.password,
       };
-      API.createNew(thePotter).then((props.toggler));
+      API.createNew(thePotter).then(props.toggler);
     }
   };
- 
+
   const toggle = () => setModal(!modal);
 
   return (

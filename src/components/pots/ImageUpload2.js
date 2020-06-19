@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import API from "../../modules/fetch";
 
-const ImageSettings = (props) => {
+const ImageSettings2 = (props) => {
   
   const [loading, setLoading] = useState(false);
   const [pots, setPots] = useState({
     potterId: props.potterId,
     // potId: props.potId,
-    finishedImg: props.finishedImg,
+    preFireImg: props.preFireImg,
   });
 
   // const addNewPotPic = (evt) => {
@@ -31,7 +31,7 @@ const ImageSettings = (props) => {
 
     const parsed = await upload.json()
 
-    props.setImage(parsed.secure_url)
+    props.setImage2(parsed.secure_url)
      
   };
 
@@ -44,7 +44,7 @@ const ImageSettings = (props) => {
   return (
     <>
       <div className="Pics">
-        <h3>Add Finished Pot Photo</h3>
+        <h3>Glazed, Pre-fired Photo</h3>
         <input
           type="file"
           name="file"
@@ -59,4 +59,4 @@ const ImageSettings = (props) => {
   );
 };
 
-export default ImageSettings;
+export default ImageSettings2;

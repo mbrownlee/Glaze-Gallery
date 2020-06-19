@@ -9,6 +9,8 @@ import {
   FormText,
 } from "reactstrap";
 import API from "../../modules/fetch";
+import ImageSettings from "./ImageUpload";
+import ImageSettings2 from "./ImageUpload2";
 
 const PotForm = (props) => {
   const [pot, setPot] = useState({
@@ -19,7 +21,7 @@ const PotForm = (props) => {
     clayId: "",
     techniqueId: "",
     decoration: "",
-    firingEnvironment: "",
+    firingEnvironmentId: "",
     firingSchedule: "",
     glaze1Id: "",
     glaze2Id: "",
@@ -32,6 +34,8 @@ const PotForm = (props) => {
   const [techniques, setTechniques] = useState([]);
   const [firingEnvironments, setFiringEnvironments] = useState([]);
   const [glazes, setGlazes] = useState([]);
+  const [image, setImage] = useState("");
+  const [image2, setImage2] = useState("");
 
   const getClays = () => {
     return API.getClays().then((clays) => {
@@ -81,7 +85,23 @@ const PotForm = (props) => {
   };
 
   const constructNewPot = (evt) => {
-    API.createNew(pot).then(() => props.history.push("/pots"));
+    const newPot = {
+      potterId: "",
+      name: pot.name,
+      preFireImg: image2,
+      finishedImg: image,
+      clayId: parseInt(pot.clayId),
+      techniqueId: parseInt(pot.techniqueId),
+      decoration: pot.decoration,
+      firingEnvironmentId: parseInt(pot.firingEnvironmentId),
+      firingSchedule: pot.firingSchedule,
+      glaze1Id: parseInt(pot.glaze1Id),
+      glaze2Id: parseInt(pot.glaze2Id),
+      glaze3Id: parseInt(pot.glaze3Id),
+      glazeDetails: pot.glazeDetails,
+      dateFinished: pot.dateFinished,
+    };
+    API.createNew(newPot).then(() => props.history.push("/pots"));
   };
 
   const editedPot = {
@@ -140,9 +160,9 @@ const PotForm = (props) => {
           <Input
             onChange={handleFieldChange}
             type="select"
-            name="claySelect"
-            value={pot.clayId}
-            id="claySelect"
+            name="clayId"
+            defaultValue={pot.clayId}
+            id="clayId"
           >
             <option value="">Type of Clay</option>
             {clays.map((clay) => (
@@ -159,9 +179,9 @@ const PotForm = (props) => {
           <Input
             onChange={handleFieldChange}
             type="select"
-            name="techiqueSelect"
-            value={pot.techniqueId}
-            id="techniqueSelect"
+            name="techiqueId"
+            defaultValue={pot.techniqueId}
+            id="techniqueId"
           >
             <option value="">Form Technique</option>
             {techniques.map((technique) => (
@@ -192,9 +212,9 @@ const PotForm = (props) => {
           <Input
             onChange={handleFieldChange}
             type="select"
-            name="glaze1Select"
-            value={pot.glaze1Id}
-            id="glaze1Select"
+            name="glaze1Id"
+            defaultValue={pot.glaze1Id}
+            id="glaze1Id"
           >
             <option value="">Primary Glaze</option>
             {glazes.map((glaze) => (
@@ -211,9 +231,9 @@ const PotForm = (props) => {
           <Input
             onChange={handleFieldChange}
             type="select"
-            name="glaze2Select"
-            value={pot.glaze2Id}
-            id="glaze2Select"
+            name="glaze2Id"
+            defaultValue={pot.glaze2Id}
+            id="glaze2Id"
           >
             <option value="">Second Glaze</option>
             {glazes.map((glaze) => (
@@ -230,9 +250,9 @@ const PotForm = (props) => {
           <Input
             onChange={handleFieldChange}
             type="select"
-            name="glaze3Select"
-            value={pot.glaze3Id}
-            id="glaze3Select"
+            name="glaze3Id"
+            defaultValue={pot.glaze3Id}
+            id="glaze3Id"
           >
             <option value="">Third Glaze</option>
             {glazes.map((glaze) => (
@@ -266,9 +286,9 @@ const PotForm = (props) => {
           <Input
             onChange={handleFieldChange}
             type="select"
-            name="firingSelect"
-            value={pot.firingEnvironmentId}
-            id="firingSelect"
+            name="firingEnvironmentId"
+            defaultValue={pot.firingEnvironmentId}
+            id="firingEnvironmentId"
           >
             <option value="">Firing Environment</option>
             {firingEnvironments.map((firingEnvironment) => (
@@ -292,23 +312,39 @@ const PotForm = (props) => {
         </Col>
       </FormGroup>
       <FormGroup row>
-        <Label for="date" sm={2}>Date Complete</Label>
+        <Label for="date" sm={2}>
+          Date Complete
+        </Label>
         <Col sm={6}>
-        <Input
-          onChange={handleFieldChange}
-          type="date"
-          name="date"
-          id="dateFinished"
-          placeholder="Date Pot Completed"
-        />
+          <Input
+            onChange={handleFieldChange}
+            type="date"
+            name="date"
+            id="dateFinished"
+            placeholder="Date Pot Completed"
+          />
         </Col>
       </FormGroup>
       <FormGroup row>
-        <Label for="exampleFile" sm={2}>
-          File
-        </Label>
+        <Label for="exampleFile" sm={2}></Label>
         <Col sm={10}>
-          <Input type="file" name="file" id="exampleFile" />
+          <ImageSettings2
+            type="file"
+            name="preFireImg"
+            id="preFireImg"
+            setImage2={setImage2}
+          />
+        </Col>
+      </FormGroup>
+      <FormGroup row>
+        <Label for="exampleFile" sm={2}></Label>
+        <Col sm={10}>
+          <ImageSettings
+            type="file"
+            name="finishedImg"
+            id="finishedImg"
+            setImage={setImage}
+          />
         </Col>
       </FormGroup>
       <FormGroup check row>
