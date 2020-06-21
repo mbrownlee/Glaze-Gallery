@@ -8,7 +8,11 @@ const API = {
       body: JSON.stringify(potterObject),
     }).then((results) => results.json());
   },
-
+  getArtistName(potterId) {
+    return fetch (
+      `http://localhost:5002/potters/${potterId}`
+    ).then((results) => results.json());
+  },
   getPotter(credentials) {
     return fetch(
       `http://localhost:5002/potters?email=${credentials.email}&password=${credentials.password}`
@@ -22,6 +26,30 @@ const API = {
   },
   getAllPots() {
     return fetch("http://localhost:5002/pots").then((result) => result.json());
+  },
+  getPotWithDetails(id) {
+    return fetch(
+      `http://localhost:5002/pots/${id}?_expand=clay&_expand=firingEnvironment&_expand=technique&_expand=potter`
+    ).then((result) => result.json());
+  },
+  getGlaze(glazeId) {
+    return fetch(
+      `http://localhost:5002/glazes/${glazeId}`
+    ).then((result) => result.json());
+  },
+  deletePot(id) {
+    return fetch(`http://localhost:5002/pots/${id}`, {
+      method: "DELETE",
+    }).then((result) => result.json());
+  },
+  updateExistingPot(editedPot) {
+    return fetch(`http://localhost:5002/pots/${editedPot.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(editedPot),
+    }).then((result) => result.json());
   },
 
   getClays() {

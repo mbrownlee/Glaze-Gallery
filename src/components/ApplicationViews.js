@@ -42,6 +42,7 @@ const ApplicationViews = (props) => {
           return <PotForm {...props} />;
         }}
       />
+      
       <Route
         exact
         path="/pots/:potId(\d+)"
@@ -52,6 +53,12 @@ const ApplicationViews = (props) => {
               {...props}
             />
           );
+        }}
+      />
+      <Route
+        path="/pots/:potId(\d+)/edit"
+        render={(props) => {
+          return <PotForm {...props} />;
         }}
       />
           </React.Fragment>
