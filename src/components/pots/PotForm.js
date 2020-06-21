@@ -86,7 +86,7 @@ const PotForm = (props) => {
 
   const constructNewPot = (evt) => {
     const newPot = {
-      potterId: props.currentPotter.id,
+      potterId: parseInt(localStorage.getItem("currentPotter")),
       name: pot.name,
       preFireImg: image2,
       finishedImg: image,
@@ -122,7 +122,7 @@ const PotForm = (props) => {
     dateFinished: pot.dateFinished,
   };
   const updateExistingPot = (evt) => {
-    API.updatePot(editedPot).then(() => props.history.push("/pots"));
+    API.updateExistingPot(editedPot).then(() => props.history.push("/pots"));
   };
   const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -162,7 +162,7 @@ const PotForm = (props) => {
             onChange={handleFieldChange}
             type="select"
             name="clayId"
-            defaultValue={pot.clayId} 
+            value={pot.clayId} 
             id="clayId"
           >
             <option value="">Type of Clay</option>
@@ -181,7 +181,7 @@ const PotForm = (props) => {
             onChange={handleFieldChange}
             type="select"
             name="techiqueId"
-            defaultValue={pot.techniqueId}
+            value={pot.techniqueId}
             id="techniqueId"
           >
             <option value="">Form Technique</option>
@@ -215,7 +215,7 @@ const PotForm = (props) => {
             onChange={handleFieldChange}
             type="select"
             name="glaze1Id"
-            defaultValue={pot.glaze1Id}
+            value={pot.glaze1Id}
             id="glaze1Id"
           >
             <option value="">Primary Glaze</option>
@@ -234,7 +234,7 @@ const PotForm = (props) => {
             onChange={handleFieldChange}
             type="select"
             name="glaze2Id"
-            defaultValue={pot.glaze2Id}
+            value={pot.glaze2Id}
             id="glaze2Id"
           >
             <option value="">Second Glaze</option>
@@ -253,7 +253,7 @@ const PotForm = (props) => {
             onChange={handleFieldChange}
             type="select"
             name="glaze3Id"
-            defaultValue={pot.glaze3Id}
+            value={pot.glaze3Id}
             id="glaze3Id"
           >
             <option value="">Third Glaze</option>
@@ -290,7 +290,7 @@ const PotForm = (props) => {
             onChange={handleFieldChange}
             type="select"
             name="firingEnvironmentId"
-            defaultValue={pot.firingEnvironmentId}
+            value={pot.firingEnvironmentId}
             id="firingEnvironmentId"
           >
             <option value="">Firing Environment</option>

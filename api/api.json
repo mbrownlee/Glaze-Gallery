@@ -63,21 +63,21 @@
   ],
   "pots": [
     {
+      "id": 3,
+      "name": "Soup  bowls",
       "potterId": 3,
-      "name": "Pink mug",
       "preFireImg": "",
       "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592498285/GlazeProject/cbdc2awr1jx0xl8wfyq6.jpg",
       "clayId": 4,
       "techniqueId": 2,
       "decoration": "adfljkasdf",
       "firingEnvironmentId": 1,
-      "firingSchedule": "adslkfjasd",
+      "firingSchedule": "cone 6",
       "glaze1Id": 7,
       "glaze2Id": 6,
       "glaze3Id": 2,
       "glazeDetails": "lafkjsdfkasd",
-      "dateFinished": "2020-06-18",
-      "id": 3
+      "dateFinished": "2020-06-18"
     },
     {
       "potterId": 2,
@@ -129,6 +129,40 @@
       "glazeDetails": "3 thin brushed light coats clear",
       "dateFinished": "2018-03-03",
       "id": 7
+    },
+    {
+      "name": "Pretty Pot",
+      "potterId": 3,
+      "preFireImg": "",
+      "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592759678/GlazeProject/vwjiouxxilrqlc9ssitb.jpg",
+      "clayId": 8,
+      "techniqueId": 2,
+      "decoration": "dfgdfg",
+      "firingEnvironmentId": 3,
+      "firingSchedule": "dsfadf",
+      "glaze1Id": 6,
+      "glaze2Id": null,
+      "glaze3Id": null,
+      "glazeDetails": "asdfasdf",
+      "dateFinished": "2020-06-21",
+      "id": 8
+    },
+    {
+      "potterId": 2,
+      "name": "Pink mug",
+      "preFireImg": "",
+      "finishedImg": "",
+      "clayId": 4,
+      "techniqueId": 2,
+      "decoration": "",
+      "firingEnvironmentId": null,
+      "firingSchedule": "",
+      "glaze1Id": null,
+      "glaze2Id": null,
+      "glaze3Id": null,
+      "glazeDetails": "",
+      "dateFinished": "",
+      "id": 9
     }
   ],
   "firingEnvironments": [

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Card,
   CardImg,
@@ -10,8 +10,20 @@ import {
   Row,
   Col
 } from "reactstrap";
+import API from "../../modules/fetch";
 
-const potCard = (props) => {
+
+
+const PotCard = (props) => {
+  const [artistName, setArtistName] = useState("")
+  
+  useEffect(() => {
+    API.getArtistName(props.pot.potterId).then((result) => {
+     setArtistName(result.artistName) 
+    })
+
+  }, [])
+ 
   return (
     <div>
      <Row>
@@ -21,7 +33,7 @@ const potCard = (props) => {
         <CardImg className="donePot" src={props.pot.finishedImg} />
         <CardBody>
           <CardTitle><h3>{props.pot.name}</h3></CardTitle>
-          <CardSubtitle>Artist Name</CardSubtitle>
+          <CardSubtitle>{artistName}</CardSubtitle>
           <Button href={`/pots/${props.pot.id}`}>Pot Details</Button>{" "}
         </CardBody>
       </Card>
@@ -31,4 +43,4 @@ const potCard = (props) => {
   );
 };
 
-export default potCard;
+export default PotCard;
