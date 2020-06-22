@@ -4,17 +4,19 @@ import "./NavBar.css";
 
 const NavBar = (props) => {
   const handleLogout = () => {
-		props.clearEmployee();
+		localStorage.removeItem("currentPotter");
 		props.history.push("/");
-	};
+  };
+  const currentPotter = localStorage.getItem("currentPotter")
+  
   return (
     <div>
       <h1 className="nav-title">Glaze Gallery</h1>
       <Nav>
-        <NavLink className="nav-item" href="/pots">
+        <NavLink className="nav-item" href={`/potters/${currentPotter}`}>
           My Pots
         </NavLink>{" "}
-        <NavLink className="nav-item" href="pots">
+        <NavLink className="nav-item" href="/pots">
           Gallery
         </NavLink>{" "}
         <NavLink className="nav-item" onClick={handleLogout} href="/">
@@ -25,5 +27,6 @@ const NavBar = (props) => {
     </div>
   );
 };
+
 
 export default NavBar;

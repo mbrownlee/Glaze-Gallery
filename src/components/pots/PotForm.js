@@ -101,7 +101,7 @@ const PotForm = (props) => {
       glazeDetails: pot.glazeDetails,
       dateFinished: pot.dateFinished,
     };
-    API.createNew(newPot).then(() => props.history.push("/pots"));
+    API.createNewPot(newPot).then(() => props.history.push("/pots"));
   };
 
   const editedPot = {
@@ -136,7 +136,7 @@ const PotForm = (props) => {
     if (props.match.params.potId) {
       API.getPot(props.match.params.potId).then(setPot);
     }
-  }, []);
+  }, [props.match.params.potId]);
 
   return (
     <Form>

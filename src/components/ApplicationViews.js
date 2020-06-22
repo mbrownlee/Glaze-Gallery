@@ -5,6 +5,7 @@ import CreateUser from "./auth/CreateUesr";
 import PotList from "./pots/PotList";
 import PotDetails from "./pots/PotDetails";
 import PotForm from "./pots/PotForm";
+import MyPotList from "./potters/MyPots";
 
 
 const ApplicationViews = (props) => {
@@ -18,6 +19,7 @@ const ApplicationViews = (props) => {
             }}
           />
            <Route
+           exact
         path="/potters"
         render={(props) => {
           return <Login {...props}/>;
@@ -26,7 +28,7 @@ const ApplicationViews = (props) => {
            <Route
         path="/create"
         render={(props) => {
-          return <CreateUser />;
+          return <CreateUser {...props}/>;
         }}
       />
       <Route
@@ -59,6 +61,12 @@ const ApplicationViews = (props) => {
         path="/pots/:potId(\d+)/edit"
         render={(props) => {
           return <PotForm {...props} />;
+        }}
+      />
+      <Route
+        path="/potters/:potterId"
+        render={(props) => {
+          return <MyPotList {...props} />;
         }}
       />
           </React.Fragment>

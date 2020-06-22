@@ -26,15 +26,20 @@ button:hover {
   background-color: #97A7BA;
   color:  #525259;
 }
-.placeholder {
-  width: 7rem;
-  height: 7rem;
-}
+
 
 .donePot {
   max-width: 12rem;
   max-height: auto;
 }
-/* .card {
-  max-width: 20rem;
-} */
+
+
+.add-btn {
+  padding: 10px 15px;
+  background-color: #E5BDA5;
+  color: #525259;
+  border: 1px solid #6D6981;
+  background-color: 250ms;
+  /* float: right; */
+}
+
