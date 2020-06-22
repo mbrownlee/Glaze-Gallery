@@ -4,7 +4,7 @@ import "./NavBar.css";
 
 const NavBar = (props) => {
   const handleLogout = () => {
-		props.clearEmployee();
+		localStorage.removeItem("currentPotter");
 		props.history.push("/");
   };
   const currentPotter = localStorage.getItem("currentPotter")

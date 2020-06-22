@@ -1,11 +1,20 @@
 const API = {
   createNew(potterObject) {
-    return fetch("http://localhost:5002/pots", {
+    return fetch("http://localhost:5002/potters", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(potterObject),
+    }).then((results) => results.json());
+  },
+  createNewPot(newPot) {
+    return fetch("http://localhost:5002/pots", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newPot),
     }).then((results) => results.json());
   },
   getArtistName(potterId) {
@@ -84,6 +93,10 @@ const API = {
       body: JSON.stringify(newImage),
     }).then((data) => data.json());
   },
-};
 
+search(searchInput) {
+  return fetch(`http://localhost:5002/pots?_${searchInput}`)
+    .then(results => results.json())
+}
+}
 export default API;

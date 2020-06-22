@@ -28,7 +28,7 @@ const ApplicationViews = (props) => {
            <Route
         path="/create"
         render={(props) => {
-          return <CreateUser />;
+          return <CreateUser {...props}/>;
         }}
       />
       <Route

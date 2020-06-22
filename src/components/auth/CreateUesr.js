@@ -17,6 +17,7 @@ const CreateUser = (props) => {
     setPotter(stateToChange);
   };
   const newPotter = (evt) => {
+  
     evt.preventDefault();
     if (
       potter.artistName === "" ||
@@ -25,12 +26,12 @@ const CreateUser = (props) => {
     ) {
       window.alert("All fields required. Please complete form.");
     } else {
-      const thePotter = {
-        name: potter.artistName,
+      const potterObject = {
+        artistName: potter.artistName,
         email: potter.email,
         password: potter.password,
       };
-      API.createNew(thePotter).then(props.toggler);
+      API.createNew(potterObject).then(props.toggler);
     }
   };
 
@@ -44,7 +45,7 @@ const CreateUser = (props) => {
             <Label>Artist's Name</Label>
             <Input
               type="text"
-              name="name"
+              name="artistName"
               id="artistName"
               onChange={handleFieldChange}
               placeholder="Your Name or Studio Name"

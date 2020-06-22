@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   Card,
   CardImg,
-  CardText,
   CardBody,
   CardTitle,
   CardSubtitle,
@@ -22,7 +21,7 @@ const PotCard = (props) => {
      setArtistName(result.artistName) 
     })
 
-  }, [])
+  }, [props.pot.potterId])
  
   return (
     <div>

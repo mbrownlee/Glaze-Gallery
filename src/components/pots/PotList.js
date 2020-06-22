@@ -4,6 +4,7 @@ import API from "../../modules/fetch";
 
 const PotList = (props) => {
   const [pots, setPots] = useState([]);
+  
   useEffect(() => {
     
   }, [pots]);
@@ -14,40 +15,32 @@ const PotList = (props) => {
       setPots(potsFromAPI);
     });
   };
-
-//   const deleteAnimal = (id) => {
-//     AnimalManager.delete(id).then(() =>
-//       AnimalManager.getAll().then(setAnimals)
-//     );
-//   };
+  
   useEffect(() => {
     getPots();
   }, []);
 
-  // Finally we use map() to "loop over" the animals array to show a list of animal cards
   return (
     <>
       <div className="container-cards">
         {pots.map((pot) => (
+         
           <PotCard
             key={pot.id}
             pot={pot}
-            // deleteAnimal={deleteAnimal}
             {...props}
           />
+          
         ))}
       </div>
-      {/* <section className="section-content">
-        <button
-          type="button"
-          className="btn"
-          onClick={() => {
-            props.history.push("/animals/new");
-          }}
-        >
-          Admit New Animal
-        </button>
-      </section> */}
+      
+        {/* <div id="searchBox">
+          <input type="text" onChange={searching} placeholder="Search" />
+          <PotList search={search}/>
+        </div> */}
+      
+      {/* <input type="text" placeholder="Search" onChange={ e => setSearch(e.target.value)}/> */}
+ 
     </>
   );
 };
