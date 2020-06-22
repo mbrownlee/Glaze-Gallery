@@ -32,6 +32,11 @@ const API = {
       `http://localhost:5002/pots/${id}?_expand=clay&_expand=firingEnvironment&_expand=technique&_expand=potter`
     ).then((result) => result.json());
   },
+  getPotsByPotter(potterId) {
+    return fetch ( `http://localhost:5002/pots?potterId=${potterId}`
+    ).then((results) => results.json());
+  },
+  
   getGlaze(glazeId) {
     return fetch(
       `http://localhost:5002/glazes/${glazeId}`
