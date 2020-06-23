@@ -95,7 +95,7 @@ const API = {
   },
 
 search(searchInput) {
-  return fetch(`http://localhost:5002/pots?_${searchInput}`)
+  return fetch(`http://localhost:5002/pots?q=${searchInput}`)
     .then(results => results.json())
 }
 }

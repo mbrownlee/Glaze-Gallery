@@ -30,7 +30,6 @@ const PotForm = (props) => {
     dateFinished: "",
   });
   const [clays, setClays] = useState([]);
-  const [potter, setPotter] = useState([]);
   const [techniques, setTechniques] = useState([]);
   const [firingEnvironments, setFiringEnvironments] = useState([]);
   const [glazes, setGlazes] = useState([]);
@@ -42,11 +41,7 @@ const PotForm = (props) => {
       setClays(clays);
     });
   };
-  //   const getPotter = () => {
-  //     return API.getPotter().then((potter) => {
-  //       setPotter(potter);
-  //     });
-  //   };
+
   const getTechniques = () => {
     return API.getTechniques().then((techniques) => {
       setTechniques(techniques);
@@ -65,9 +60,7 @@ const PotForm = (props) => {
   useEffect(() => {
     getClays();
   }, []);
-  //   useEffect(() => {
-  //     getPotter();
-  //   }, []);
+
   useEffect(() => {
     getFiringEnvironments();
   }, []);
@@ -101,7 +94,9 @@ const PotForm = (props) => {
       glazeDetails: pot.glazeDetails,
       dateFinished: pot.dateFinished,
     };
-    API.createNewPot(newPot).then(() => props.history.push("/pots"));
+    API.createNewPot(newPot).then(() => 
+      props.history.push(`/potters/${localStorage.getItem("currentPotter")}`)
+    )
   };
 
   const editedPot = {

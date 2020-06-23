@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import PotCard from "./PotCard";
+import {
+  Row,
+} from "reactstrap";
 import API from "../../modules/fetch";
 
 const PotList = (props) => {
@@ -22,7 +25,9 @@ const PotList = (props) => {
 
   return (
     <>
+    
       <div className="container-cards">
+      <Row sm="4">
         {pots.map((pot) => (
          
           <PotCard
@@ -32,14 +37,9 @@ const PotList = (props) => {
           />
           
         ))}
+        </Row>
       </div>
       
-        {/* <div id="searchBox">
-          <input type="text" onChange={searching} placeholder="Search" />
-          <PotList search={search}/>
-        </div> */}
-      
-      {/* <input type="text" placeholder="Search" onChange={ e => setSearch(e.target.value)}/> */}
  
     </>
   );

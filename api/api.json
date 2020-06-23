@@ -311,6 +311,40 @@
       "glazeDetails": "Art deco 3x inside and top 1/2. Ancient Copper 3x on bottom 1/2. Vert Luster brushed 3x on middle with slight overlap.",
       "dateFinished": "2020-04-15",
       "id": 20
+    },
+    {
+      "potterId": 10,
+      "name": "Large Floral Platter",
+      "preFireImg": "https://res.cloudinary.com/michellemb/image/upload/v1592943996/GlazeProject/bgje66dpk2mbick5iig8.jpg",
+      "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592943989/GlazeProject/cj11fcleiryjxuht9jk5.jpg",
+      "clayId": 7,
+      "techniqueId": 1,
+      "decoration": "Trimmed a foot ",
+      "firingEnvironmentId": 1,
+      "firingSchedule": "Cone 5",
+      "glaze1Id": 13,
+      "glaze2Id": null,
+      "glaze3Id": null,
+      "glazeDetails": "Handpainted with underglazes then 3x clear",
+      "dateFinished": "2020-04-03",
+      "id": 21
+    },
+    {
+      "potterId": 10,
+      "name": "Test pot",
+      "preFireImg": "https://res.cloudinary.com/michellemb/image/upload/v1592944284/GlazeProject/zlbnwntglmzxqdiu52wd.jpg",
+      "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592944277/GlazeProject/mfpag6jgjmdhrsjsqxlw.jpg",
+      "clayId": 3,
+      "techniqueId": 1,
+      "decoration": "none",
+      "firingEnvironmentId": 1,
+      "firingSchedule": "Cone 5",
+      "glaze1Id": 9,
+      "glaze2Id": 2,
+      "glaze3Id": 4,
+      "glazeDetails": "Tested 3x various glazes with layering",
+      "dateFinished": "2020-06-04",
+      "id": 22
     }
   ],
   "firingEnvironments": [

@@ -37,7 +37,8 @@ const Login = (props) => {
           window.alert("No account. Create account.");
         } else {
           localStorage.setItem("currentPotter", potter[0].id);
-          props.history.push("/pots");
+          props.history.push(`/potters/${localStorage.getItem("currentPotter")}`)
+          props.setIsAuthenticated(true);
         }
       });
     }

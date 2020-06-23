@@ -59,8 +59,9 @@ h2 {
   }
 
   #new-btn {
-      float: right;
-      margin-right: 10px;
+     
+      margin-left: 40%;
+      margin-right: 30%;
   }
 
   .create-new {
