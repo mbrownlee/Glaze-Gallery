@@ -9,8 +9,10 @@ import MyPotList from "./potters/MyPots";
 
 
 const ApplicationViews = (props) => {
+  const isAuthenticated = () => localStorage.getItem("currentPotter") !== null
     return (
         <React.Fragment>
+        
           <Route
             exact
             path="/"

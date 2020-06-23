@@ -36,9 +36,10 @@ const PotDetail = (props) => {
   // }, [props.match.params.potId]);
 
   const handleDelete = () => {
-    API.deletePot(props.match.params.potId).then(() =>
+    
+    API.deletePot(props.match.params.potId).then(() => {
       props.history.push("/pots")
-    );
+    });
   };
   useEffect(() => {
     let potObj = {};
