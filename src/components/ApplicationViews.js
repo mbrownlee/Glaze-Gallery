@@ -6,10 +6,11 @@ import PotList from "./pots/PotList";
 import PotDetails from "./pots/PotDetails";
 import PotForm from "./pots/PotForm";
 import MyPotList from "./potters/MyPots";
+import SearchResults from "./searchOverload/SearchResults";
 
 
 const ApplicationViews = (props) => {
-  const isAuthenticated = () => localStorage.getItem("currentPotter") !== null
+  // const isAuthenticated = () => localStorage.getItem("currentPotter") !== null
     return (
         <React.Fragment>
         
@@ -38,6 +39,13 @@ const ApplicationViews = (props) => {
         path="/pots"
         render={(props) => {
             return <PotList {...props} />;
+        }}
+      />
+      <Route
+      exact
+        path="/search_results"
+        render={(p) => {
+            return <SearchResults {...props} />;
         }}
       />
       <Route

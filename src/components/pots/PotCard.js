@@ -24,10 +24,10 @@ const PotCard = (props) => {
   }, [props.pot.potterId])
  
   return (
-    <div>
-     <Row>
-     <Col sm="4">
-      <Card>
+    <div className="potCards">
+    
+     {/* <Col sm="4"> */}
+      <Card className="potCard">
      
         <CardImg className="donePot" src={props.pot.finishedImg} />
         <CardBody>
@@ -36,8 +36,8 @@ const PotCard = (props) => {
           <Button href={`/pots/${props.pot.id}`}>Pot Details</Button>{" "}
         </CardBody>
       </Card>
-      </Col>
-      </Row>
+      {/* </Col> */}
+     
     </div>
   );
 };

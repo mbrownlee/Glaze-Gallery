@@ -24,16 +24,7 @@ const PotDetail = (props) => {
     glaze2: {},
     glaze3: {}
   });
-  //   const [productTypesWithLocation, setProductTypesWithLocation] = useState([]);
 
-  // useEffect(() => {
-  //   API.getPot(props.match.params.potId).then(
-  //     (APIResult) => {
-  //       console.log(APIResult, "what you want");
-  //       setPot(APIResult);
-  //     }
-  //   );
-  // }, [props.match.params.potId]);
 
   const handleDelete = () => {
     
@@ -63,13 +54,7 @@ const PotDetail = (props) => {
       });
   }, [props.match.params.potId]);
 
-  // useEffect(() => {
-  //   ProductTypeManager.getByProduct(props.match.params.productId).then(
-  //     (APIResult) => {
-  //       setProductTypesWithLocation(APIResult);
-  //     }
-  //   );
-  // }, [props.match.params.prodctId]);
+
 
   return (
     <div className="card">
