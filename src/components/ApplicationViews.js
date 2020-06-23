@@ -7,10 +7,11 @@ import PotDetails from "./pots/PotDetails";
 import PotForm from "./pots/PotForm";
 import MyPotList from "./potters/MyPots";
 import SearchResults from "./searchOverload/SearchResults";
+import PotSearch from "./searchOverload/PotSearch";
 
 
 const ApplicationViews = (props) => {
-  // const isAuthenticated = () => localStorage.getItem("currentPotter") !== null
+  const setIsAuthenticated=props.setIsAuthenticated
     return (
         <React.Fragment>
         
@@ -18,27 +19,23 @@ const ApplicationViews = (props) => {
             exact
             path="/"
             render={(props) => {
-              return <Login {...props}/>;
+              return <Login setIsAuthenticated={setIsAuthenticated} {...props}/>;
             }}
           />
-           <Route
+           {/* <Route
            exact
         path="/potters"
         render={(props) => {
           return <Login {...props}/>;
         }}
-      />
-           <Route
-        path="/create"
-        render={(props) => {
-          return <CreateUser {...props}/>;
-        }}
-      />
+      /> */}
+  
       <Route
       exact
         path="/pots"
         render={(props) => {
-            return <PotList {...props} />;
+            return <PotList {...props} />
+            
         }}
       />
       <Route
@@ -54,6 +51,7 @@ const ApplicationViews = (props) => {
           return <PotForm {...props} />;
         }}
       />
+          
       
       <Route
         exact
@@ -76,7 +74,8 @@ const ApplicationViews = (props) => {
       <Route
         path="/potters/:potterId"
         render={(props) => {
-          return <MyPotList {...props} />;
+          return <MyPotList {...props} />
+          
         }}
       />
           </React.Fragment>

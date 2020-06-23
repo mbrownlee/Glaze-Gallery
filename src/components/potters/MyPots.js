@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import API from "../../modules/fetch";
 import PotCard from "../pots/PotCard";
+import {
+  
+  Row,
+  Col
+} from "reactstrap";
 
 
 const MyPotList = (props) => {
@@ -30,9 +35,11 @@ const MyPotList = (props) => {
         </button>
       </section>
       <div className="container-cards">
+      <Row sm="4">
         {pots.map((pot) => (
           <PotCard key={pot.id} pot={pot} {...props} />
         ))}
+        </Row>
       </div>
     </>
   );

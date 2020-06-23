@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PotCard from "./PotCard";
 import {
-  Card,
-  CardImg,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button,
   Row,
-  Col
 } from "reactstrap";
 import API from "../../modules/fetch";
 
