@@ -329,6 +329,7 @@ const PotForm = (props) => {
         <Label for="exampleFile" sm={2}></Label>
         <Col sm={10}>
           <ImageSettings2
+          
             type="file"
             name="preFireImg"
             id="preFireImg"

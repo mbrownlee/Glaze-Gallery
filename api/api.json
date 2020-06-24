@@ -71,6 +71,12 @@
       "email": "red@neck.com",
       "password": "1234",
       "id": 13
+    },
+    {
+      "artistName": "joe",
+      "email": "joe@joe.com",
+      "password": "1234",
+      "id": 14
     }
   ],
   "pots": [
@@ -90,23 +96,6 @@
       "glaze3Id": null,
       "glazeDetails": "3x brushed sapphire float all over. 4x brushed blue rutile on inside and top 1/2 of outside",
       "dateFinished": "2020-06-18"
-    },
-    {
-      "potterId": 1,
-      "name": "Seaside Pitcher",
-      "preFireImg": "",
-      "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1592499808/GlazeProject/sg6lwtgjxv1lkwvww5bx.jpg",
-      "clayId": 3,
-      "techniqueId": 1,
-      "decoration": "fondant mold seashells",
-      "firingEnvironmentId": 1,
-      "firingSchedule": "hot cone 5, no hold, no soak, propped 2 hours.",
-      "glaze1Id": 14,
-      "glaze2Id": 3,
-      "glaze3Id": 6,
-      "glazeDetails": "dipped Sea Spray x1, brushed iron yellow x3 with slight overlap, dipped oatmeal and poured into inside",
-      "dateFinished": "2019-02-05",
-      "id": 6
     },
     {
       "potterId": 4,

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import API from "../../modules/fetch";
 
 const PotDetail = (props) => {
-  const currentPotter = localStorage.getItem("currentPotter")
+  const currentPotter = parseInt(localStorage.getItem("currentPotter"))
   const [pot, setPot] = useState({
     potterId: "",
     name: "",
