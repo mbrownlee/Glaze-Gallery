@@ -43,5 +43,16 @@ button:hover {
   /* float: right; */
 }
 
+.potCard {
+  height: 430px;
+  margin: 3px;
+  align-items: center;
+}
+
+.cardImg {
+  padding-top: 3px;
+}
+
+
 
 
