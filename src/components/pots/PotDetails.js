@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import API from "../../modules/fetch";
 
 const PotDetail = (props) => {
+  const currentPotter = localStorage.getItem("currentPotter")
   const [pot, setPot] = useState({
     potterId: "",
     name: "",
@@ -81,19 +82,22 @@ const PotDetail = (props) => {
         </p>
 
         {/* <p>Keep details private or share with community?: {pot.Private}</p>   */}
-
+      
+       
         <div className="edit">
+        {currentPotter === pot.potterId ? 
           <button
             type="button"
             onClick={() => props.history.push(`/pots/${pot.id}/edit`)}
           >
             Update Pot
-          </button>
+          </button> : null }
         </div>
         <div className="delete">
+        {currentPotter === pot.potterId ?
           <button type="button" onClick={handleDelete}>
             Delete Pot
-          </button>
+          </button> : null }
         </div>
       </div>
     </div>
