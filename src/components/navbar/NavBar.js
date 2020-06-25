@@ -13,21 +13,22 @@ const NavBar = (props) => {
   return (
     <div>
       <h1 className="nav-title">Glaze Gallery</h1>
-      <Nav>
+      <Nav className="nav-links">
             {currentPotter ? 
         <NavLink className="nav-item" href={`/potters/${currentPotter}`}>
-          My Pots
+          <h3>My Pots</h3>
         </NavLink> : null }
         {currentPotter ? 
         <NavLink className="nav-item" href="/pots">
-          Gallery
+         <h3>Gallery</h3> 
         </NavLink> : null }
         {currentPotter ? 
         <NavLink className="nav-item" onClick={handleLogout} href="/">
-          Logout
+         <h3>Logout</h3> 
         </NavLink> : null }
         
       </Nav>
+      <hr className="lineBreak"></hr>
     </div>
   );
 };

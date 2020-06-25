@@ -90,7 +90,7 @@ const Login = (props) => {
             New Account Sign Up
           </ModalHeader>
           <ModalBody>
-            <CreateUser toggler={toggle} />
+            <CreateUser toggler={toggle} {...props}/>
           </ModalBody>
         </Modal>
       </div>

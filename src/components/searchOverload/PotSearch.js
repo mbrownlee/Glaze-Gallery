@@ -11,14 +11,15 @@ const PotSearch = (props) => {
     <>
       <div className="searchBox">
         <input
+        className="searchInputBar"
           type="text"
           value={searchInput}
           onChange={handleFieldChange}
           placeholder="Key Word Search"
         />
-        <button onClick={() => {
+        <button className="search-btn" onClick={() => {
             props.getResults(searchInput)
-        }}>Submit</button>
+        }}>Search</button>
       </div>
     </>
   );
