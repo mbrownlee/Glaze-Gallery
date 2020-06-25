@@ -134,7 +134,7 @@ const PotForm = (props) => {
   }, [props.match.params.potId]);
 
   return (
-    <Form>
+    <Form className="formBody">
       <FormGroup row>
         <Label for="text" sm={2}>
           Name of Pot

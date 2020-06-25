@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Container, Row, Col } from 'reactstrap';
 import API from "../../modules/fetch";
 
 const PotDetail = (props) => {
@@ -58,10 +59,13 @@ const PotDetail = (props) => {
 
 
   return (
-    <div className="card">
-      <div className="card-content">
-        <h1>My Pot</h1>
-        <h3>Pot Name: {pot.name}</h3>
+    <Container>
+    <div className="cardDetail">
+      <div className="detailContent">
+    <Row>
+    <Col>
+        <h1>Pot Details</h1>
+        <h3>{pot.name}</h3>
         <p>Artist: {pot.potter.artistName}</p>
         <p>Clay: {pot.clay.clay}</p>
         <p>Technique: {pot.technique.technique}</p>
@@ -73,34 +77,44 @@ const PotDetail = (props) => {
         <p>Third Glaze: {pot.glaze3.glaze}</p>
         <p>Glaze Details: {pot.glazeDetails}</p>
         <p>Date Completed: {pot.dateFinished}</p>
-        <p>
-          Glazed Pot before firing:{" "}
+        </Col>
+        <Col className="image-col">
+        <section className="detail-img">
+          Pre-Fired:
           <img className="donePot" src={pot.preFireImg} />
-        </p>
-        <p>
+        </section>
+        <section className="detail-img">
           Completed Pot: <img className="donePot" src={pot.finishedImg} />
-        </p>
-
-        {/* <p>Keep details private or share with community?: {pot.Private}</p>   */}
+        </section>
+        </Col>
+        
+      </Row>
       
-       
+       <Row>
+       <Col xs="6" sm="4">
         <div className="edit">
         {currentPotter === pot.potterId ? 
           <button
+          className="edit-btn"
             type="button"
             onClick={() => props.history.push(`/pots/${pot.id}/edit`)}
           >
-            Update Pot
+            Edit Details
           </button> : null }
         </div>
+        </Col>
+        <Col xs="6" sm="4">
         <div className="delete">
         {currentPotter === pot.potterId ?
-          <button type="button" onClick={handleDelete}>
+          <button className="delete-btn" type="button" onClick={handleDelete}>
             Delete Pot
           </button> : null }
         </div>
+        </Col>
+</Row>
       </div>
     </div>
+    </Container>
   );
 };
 
