@@ -32,7 +32,9 @@ button:hover {
 .donePot {
   max-width: 12rem;
   max-height: auto;
+  display: flex;
 }
+
 .btn-secondary{
   padding: 10px 15px;
   background-color: #6D6981;
@@ -98,6 +100,42 @@ flex-direction: row-reverse;
 .section-content {
   padding-bottom: 10px;
 }
+.formBody {
+  padding-top: 15px;
+}
+.cardDetail {
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-left: 25px;
+  background-color:  #E5BDA5;
+  border-radius: 5px;
+}
+.edit-btn {
+  padding: 10px 15px;
+  background-color: #6D6981;
+  color: #F0EBF0;
+  border: 1px solid black;
+  background-color: 250ms;
+  border-radius: 5px;
+}
+.delete-btn {
+  padding: 10px 15px;
+  background-color: maroon;
+  color: #F0EBF0;
+  border: 1px solid black;
+  background-color: 250ms;
+  border-radius: 5px;
+}
+.detail-img {
+  padding-top: 30px;
+}
+.edit {
+  padding-bottom: 10px;
+}
+.delete {
+  padding-bottom: 10px;
+}
+
 
 
 

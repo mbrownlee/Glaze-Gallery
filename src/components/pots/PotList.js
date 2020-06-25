@@ -15,6 +15,7 @@ const PotList = (props) => {
   const getPots = () => {
   
     return API.getAllPots().then((potsFromAPI) => {
+      console.log(potsFromAPI, "potsfromApi")
       setPots(potsFromAPI);
     });
   };
