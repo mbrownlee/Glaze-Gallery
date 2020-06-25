@@ -30,9 +30,14 @@ const CreateUser = (props) => {
         artistName: potter.artistName,
         email: potter.email,
         password: potter.password,
-      };
-      API.createNew(potterObject).then(props.toggler);
-    }
+      }; 
+      API.createNew(potterObject).then(newPotter => {
+        localStorage.setItem("currentPotter", newPotter.id);
+        props.history.push(`/potters/${newPotter.id}`)
+        props.setIsAuthenticated(true);
+        props.toggler()
+      });}
+    
   };
 
   const toggle = () => setModal(!modal);

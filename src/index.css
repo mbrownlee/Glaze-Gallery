@@ -19,6 +19,7 @@ code {
   color: #525259;
   border: 1px solid #6D6981;
   background-color: 250ms;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -32,16 +33,72 @@ button:hover {
   max-width: 12rem;
   max-height: auto;
 }
-
+.btn-secondary{
+  padding: 10px 15px;
+  background-color: #6D6981;
+  color: #F0EBF0;
+  border: 1px solid #E5BDA5;
+  background-color: 250ms;
+  border-radius: 5px;
+}
 
 .add-btn {
   padding: 10px 15px;
   background-color: #E5BDA5;
   color: #525259;
   border: 1px solid #6D6981;
+  border-radius: 5px;
   background-color: 250ms;
   /* float: right; */
 }
+
+.potCard {
+  background-color: #F0EBF0;
+  height: 430px;
+  margin: 3px;
+  align-items: center;
+}
+
+.cardImg {
+  padding-top: 3px;
+}
+.searchBox {
+  display: flex;
+flex-direction: row-reverse;
+}
+.searchInputBar {
+  height: 30px;
+  background-color: #F0EBF0;
+  width: 30%;
+  border-radius: 5px;
+  
+}
+.search-btn {
+  height: 30px;
+  padding: 5px;
+  background-color: #7c8a9b;
+  color: #F0EBF0;
+  border: 1px solid #E5BDA5;
+  background-color: 250ms;
+  border-radius: 5px;
+  
+}
+
+.nav-links {
+  justify-content: space-between;
+}
+.lineBreak {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+  background-color:#f0ebf0;
+  opacity: 0.3;
+}
+.section-content {
+  padding-bottom: 10px;
+}
+
 
 
 
