@@ -31,7 +31,7 @@ const PotDetail = (props) => {
   const handleDelete = () => {
     
     API.deletePot(props.match.params.potId).then(() => {
-      props.history.push("/pots")
+      props.history.push(`/potters/${localStorage.getItem("currentPotter")}`)
     });
   };
   useEffect(() => {
