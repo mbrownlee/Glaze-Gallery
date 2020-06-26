@@ -38,7 +38,6 @@ const PotDetail = (props) => {
     let potObj = {};
     API.getPotWithDetails(props.match.params.potId)
       .then((result) => {
-        console.log(result, "clay");
         potObj = result;
       })
       .then(() => API.getGlaze(potObj.glaze1Id))

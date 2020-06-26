@@ -1,7 +1,6 @@
 import { Route } from "react-router-dom";
 import React from "react";
 import Login from "./auth/login";
-import CreateUser from "./auth/CreateUesr";
 import PotList from "./pots/PotList";
 import PotDetails from "./pots/PotDetails";
 import PotForm from "./pots/PotForm";
@@ -22,13 +21,6 @@ const ApplicationViews = (props) => {
               return <Login setIsAuthenticated={setIsAuthenticated} {...props}/>;
             }}
           />
-           {/* <Route
-           exact
-        path="/potters"
-        render={(props) => {
-          return <Login {...props}/>;
-        }}
-      /> */}
   
       <Route
       exact
