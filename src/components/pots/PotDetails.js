@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from 'reactstrap';
 import API from "../../modules/fetch";
+import NoPhoto from "./NoPhoto.jpeg"
 
 const PotDetail = (props) => {
   const currentPotter = parseInt(localStorage.getItem("currentPotter"))
@@ -80,7 +81,8 @@ const PotDetail = (props) => {
         <Col className="image-col">
         <section className="detail-img">
           Pre-Fired:
-          <img className="donePot" src={pot.preFireImg} />
+          {pot.preFireImg !== "" ?
+          <img className="donePot" src={pot.preFireImg} /> : <img className="noPhoto" src={require("./NoPhoto.jpeg")} alt="No Image" /> }
         </section>
         <section className="detail-img">
           Completed Pot: <img className="donePot" src={pot.finishedImg} />
