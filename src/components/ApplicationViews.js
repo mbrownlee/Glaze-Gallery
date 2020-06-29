@@ -6,7 +6,6 @@ import PotDetails from "./pots/PotDetails";
 import PotForm from "./pots/PotForm";
 import MyPotList from "./potters/MyPots";
 import SearchResults from "./searchOverload/SearchResults";
-import PotSearch from "./searchOverload/PotSearch";
 
 
 const ApplicationViews = (props) => {

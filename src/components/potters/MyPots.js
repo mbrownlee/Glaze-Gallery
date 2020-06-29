@@ -4,7 +4,6 @@ import PotCard from "../pots/PotCard";
 import {
   
   Row,
-  Col
 } from "reactstrap";
 
 
@@ -17,7 +16,7 @@ const MyPotList = (props) => {
         setMyPots(APIResults);
       }
     );
-  }, []);
+  }, [props.match.params.potterId]);
   return (
     <>
       <section className="section-content">

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import API from "../../modules/fetch";
 
 const ImageSettings2 = (props) => {
   
@@ -9,14 +8,6 @@ const ImageSettings2 = (props) => {
     // potId: props.potId,
     preFireImg: props.preFireImg,
   });
-
-  // const addNewPotPic = (evt) => {
-    // setLoading(true);
-    // const newPot = { ...pots };
-  
-    // newPot.finishedImg = image;
-    // API.addImage(newPot).then(() => props.history.push("/pots"));
-  
 
   const uploadImage = async (evt) => {
     const files = evt.target.files[0];
@@ -51,7 +42,7 @@ const ImageSettings2 = (props) => {
           placeholder="Upload photo"
           onChange={uploadImage}
         />
-        {loading && <p>Spinning Pots ... Photo will show after submitting form</p>}
+        {loading && <p>... Photo will show after submitting form</p>}
       </div>
       
       

@@ -6,8 +6,6 @@ import {
   CardTitle,
   CardSubtitle,
   Button,
-  Row,
-  Col,
 } from "reactstrap";
 import API from "../../modules/fetch";
 
