@@ -135,7 +135,11 @@ flex-direction: row-reverse;
 .delete {
   padding-bottom: 10px;
 }
-
+.noPhoto {
+  max-width: 12rem;
+  max-height: auto;
+  display: flex;
+}
 
 
 

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Nav, NavItem, NavLink } from "reactstrap";
+import React from "react";
+import { Nav, NavLink } from "reactstrap";
 import "./NavBar.css";
 
 const NavBar = (props) => {

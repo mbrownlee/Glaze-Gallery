@@ -31,14 +31,13 @@ const PotDetail = (props) => {
   const handleDelete = () => {
     
     API.deletePot(props.match.params.potId).then(() => {
-      props.history.push("/pots")
+      props.history.push(`/potters/${localStorage.getItem("currentPotter")}`)
     });
   };
   useEffect(() => {
     let potObj = {};
     API.getPotWithDetails(props.match.params.potId)
       .then((result) => {
-        console.log(result, "clay");
         potObj = result;
       })
       .then(() => API.getGlaze(potObj.glaze1Id))
@@ -81,7 +80,8 @@ const PotDetail = (props) => {
         <Col className="image-col">
         <section className="detail-img">
           Pre-Fired:
-          <img className="donePot" src={pot.preFireImg} />
+          {pot.preFireImg !== "" ?
+          <img className="donePot" src={pot.preFireImg} alt="prefire"/> : <img className="noPhoto" src={require("./NoPhoto.jpeg")} alt="No Image" /> }
         </section>
         <section className="detail-img">
           Completed Pot: <img className="donePot" src={pot.finishedImg} />
