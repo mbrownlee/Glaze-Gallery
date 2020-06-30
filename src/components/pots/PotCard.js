@@ -29,7 +29,10 @@ const PotCard = (props) => {
             <h3>{props.pot.name}</h3>
           </CardTitle>
           <CardSubtitle>{artistName}</CardSubtitle>
-          <Button href={`/pots/${props.pot.id}`}>Pot Details</Button>{" "}
+          <div className="button--details">
+          <Button  href={`/pots/${props.pot.id}`}>Pot Details</Button>{" "}
+
+          </div>
         </CardBody>
       </Card>
     </div>
