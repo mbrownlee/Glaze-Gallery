@@ -698,10 +698,11 @@
       "id": 44
     },
     {
-      "potterId": 8,
+      "id": 45,
       "name": "Tea Bowl",
-      "preFireImg": "https://res.cloudinary.com/michellemb/image/upload/v1593121640/GlazeProject/iuyorfthmmj5bvh9oazc.jpg",
-      "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1593121644/GlazeProject/vo2brync8ev2frbljnsf.jpg",
+      "potterId": 8,
+      "preFireImg": "https://res.cloudinary.com/michellemb/image/upload/v1593476702/GlazeProject/iudmgolocnwo7x6mftpy.jpg",
+      "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1593476708/GlazeProject/t3ncjdfqj6s1ddq1loec.jpg",
       "clayId": 8,
       "techniqueId": 1,
       "decoration": "none",
@@ -711,8 +712,7 @@
       "glaze2Id": 3,
       "glaze3Id": null,
       "glazeDetails": "heavy oatmeal on edges",
-      "dateFinished": "2020-05-05",
-      "id": 45
+      "dateFinished": "2020-05-05"
     },
     {
       "potterId": 8,
