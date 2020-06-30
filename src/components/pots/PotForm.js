@@ -103,8 +103,8 @@ const PotForm = (props) => {
     id: props.match.params.potId,
     name: pot.name,
     potterId: pot.potterId,
-    preFireImg: pot.preFireImg,
-    finishedImg: pot.finishedImg,
+    preFireImg: image2 === "" ? pot.preFireImg : image2,
+    finishedImg: image === "" ? pot.finishedImg : image,
     clayId: parseInt(pot.clayId),
     techniqueId: parseInt(pot.techniqueId),
     decoration: pot.decoration,
@@ -117,7 +117,7 @@ const PotForm = (props) => {
     dateFinished: pot.dateFinished,
   };
   const updateExistingPot = (evt) => {
-    API.updateExistingPot(editedPot).then(() => props.history.push("/pots"));
+    API.updateExistingPot(editedPot).then(() => props.history.push(`/potters/${localStorage.getItem("currentPotter")}`));
   };
   const handleSubmit = (evt) => {
     evt.preventDefault();
