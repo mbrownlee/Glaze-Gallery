@@ -83,7 +83,8 @@
       "glaze2Id": 2,
       "glaze3Id": null,
       "glazeDetails": "3x brushed sapphire float all over. 4x brushed blue rutile on inside and top 1/2 of outside",
-      "dateFinished": "2020-06-18"
+      "dateFinished": "2020-06-18",
+      "private": false
     },
     {
       "potterId": 4,
@@ -100,7 +101,8 @@
       "glaze3Id": null,
       "glazeDetails": "3 thin brushed light coats clear",
       "dateFinished": "2018-03-03",
-      "id": 7
+      "id": 7,
+      "private": false
     },
     {
       "id": 9,
@@ -117,7 +119,8 @@
       "glaze2Id": 7,
       "glaze3Id": null,
       "glazeDetails": "3x brushed each. Slight overlap edges of copper over rutile.",
-      "dateFinished": "2020-03-03"
+      "dateFinished": "2020-03-03",
+      "private": false
     },
     {
       "potterId": 7,
@@ -134,7 +137,8 @@
       "glaze3Id": 9,
       "glazeDetails": "",
       "dateFinished": "2020-06-01",
-      "id": 10
+      "id": 10,
+      "private": false
     },
     {
       "id": 11,
@@ -151,7 +155,8 @@
       "glaze2Id": null,
       "glaze3Id": null,
       "glazeDetails": "Underglazes painted on greenware. 3x thin brushed clear on bisque.",
-      "dateFinished": "2020-01-08"
+      "dateFinished": "2020-01-08",
+      "private": false
     },
     {
       "id": 12,
@@ -168,7 +173,8 @@
       "glaze2Id": null,
       "glaze3Id": null,
       "glazeDetails": "3x thin clear",
-      "dateFinished": "2020-03-20"
+      "dateFinished": "2020-03-20",
+      "private": false
     },
     {
       "potterId": 6,
@@ -185,7 +191,8 @@
       "glaze3Id": null,
       "glazeDetails": "Hand carved lyrics to \"Killing in the Name of\"",
       "dateFinished": "2020-05-06",
-      "id": 14
+      "id": 14,
+      "private": false
     },
     {
       "potterId": 6,
@@ -202,7 +209,8 @@
       "glaze3Id": null,
       "glazeDetails": "White chess pieces dipped in oatmeal. Red brushed on.",
       "dateFinished": "2020-04-09",
-      "id": 15
+      "id": 15,
+      "private": false
     },
     {
       "potterId": 13,
@@ -219,7 +227,8 @@
       "glaze3Id": null,
       "glazeDetails": "Bottom 2/3 naked clay. Top 1/3 heavy drips.",
       "dateFinished": "2019-12-25",
-      "id": 16
+      "id": 16,
+      "private": true
     },
     {
       "potterId": 13,
@@ -236,7 +245,8 @@
       "glaze3Id": 12,
       "glazeDetails": "Dipped in snow. Others added in spots",
       "dateFinished": "2020-03-19",
-      "id": 17
+      "id": 17,
+      "private": true
     },
     {
       "potterId": 9,
@@ -253,7 +263,8 @@
       "glaze3Id": null,
       "glazeDetails": "Dipped part of the bowl in iron yellow. Rest was dipped in clear.",
       "dateFinished": "2019-07-16",
-      "id": 18
+      "id": 18,
+      "private": false
     },
     {
       "potterId": 9,
@@ -270,7 +281,8 @@
       "glaze3Id": 1,
       "glazeDetails": "dipped oatmeal, painted the rest",
       "dateFinished": "2020-06-22",
-      "id": 19
+      "id": 19,
+      "private": true
     },
     {
       "potterId": 3,
@@ -287,7 +299,8 @@
       "glaze3Id": null,
       "glazeDetails": "Art deco 3x inside and top 1/2. Ancient Copper 3x on bottom 1/2. Vert Luster brushed 3x on middle with slight overlap.",
       "dateFinished": "2020-04-15",
-      "id": 20
+      "id": 20,
+      "private": false
     },
     {
       "potterId": 10,
@@ -304,7 +317,8 @@
       "glaze3Id": null,
       "glazeDetails": "Handpainted with underglazes then 3x clear",
       "dateFinished": "2020-04-03",
-      "id": 21
+      "id": 21,
+      "private": false
     },
     {
       "potterId": 10,
@@ -321,7 +335,8 @@
       "glaze3Id": 4,
       "glazeDetails": "Tested 3x various glazes with layering",
       "dateFinished": "2020-06-04",
-      "id": 22
+      "id": 22,
+      "private": false
     },
     {
       "potterId": 1,
@@ -338,7 +353,8 @@
       "glaze3Id": 13,
       "glazeDetails": "brushed x3",
       "dateFinished": "2019-02-05",
-      "id": 23
+      "id": 23,
+      "private": true
     },
     {
       "potterId": 1,
@@ -355,7 +371,8 @@
       "glaze3Id": 7,
       "glazeDetails": "3x brushed, black underglaze added and wiped back to age",
       "dateFinished": "2018-11-22",
-      "id": 24
+      "id": 24,
+      "private": true
     },
     {
       "potterId": 1,
@@ -372,7 +389,8 @@
       "glaze3Id": null,
       "glazeDetails": "black underglazed wiped back to age",
       "dateFinished": "2020-01-07",
-      "id": 25
+      "id": 25,
+      "private": true
     },
     {
       "potterId": 1,
@@ -389,7 +407,8 @@
       "glaze3Id": null,
       "glazeDetails": "dipped",
       "dateFinished": "2019-04-07",
-      "id": 26
+      "id": 26,
+      "private": true
     },
     {
       "potterId": 2,
@@ -406,7 +425,8 @@
       "glaze3Id": 13,
       "glazeDetails": "dipped ",
       "dateFinished": "2020-03-08",
-      "id": 27
+      "id": 27,
+      "private": false
     },
     {
       "potterId": 2,
@@ -423,7 +443,8 @@
       "glaze3Id": 13,
       "glazeDetails": "dipped",
       "dateFinished": "2020-06-10",
-      "id": 28
+      "id": 28,
+      "private": false
     },
     {
       "potterId": 2,
@@ -440,7 +461,8 @@
       "glaze3Id": 13,
       "glazeDetails": "dipped",
       "dateFinished": "2020-01-03",
-      "id": 29
+      "id": 29,
+      "private": false
     },
     {
       "potterId": 10,
@@ -457,7 +479,8 @@
       "glaze3Id": null,
       "glazeDetails": "3x brushed",
       "dateFinished": "2020-05-05",
-      "id": 30
+      "id": 30,
+      "private": false
     },
     {
       "potterId": 7,
@@ -474,7 +497,8 @@
       "glaze3Id": 1,
       "glazeDetails": "3x brushed stripes each, also ancient jasper and smokey merlot both from Amaco",
       "dateFinished": "2020-02-29",
-      "id": 31
+      "id": 31,
+      "private": false
     },
     {
       "potterId": 7,
@@ -491,7 +515,8 @@
       "glaze3Id": 4,
       "glazeDetails": "3x brushed, overlapping",
       "dateFinished": "2020-01-11",
-      "id": 32
+      "id": 32,
+      "private": false
     },
     {
       "potterId": 7,
@@ -508,7 +533,8 @@
       "glaze3Id": 15,
       "glazeDetails": "3x brushed",
       "dateFinished": "2019-10-28",
-      "id": 33
+      "id": 33,
+      "private": false
     },
     {
       "potterId": 7,
@@ -525,7 +551,8 @@
       "glaze3Id": 14,
       "glazeDetails": "dipped mountain mist, added others with brush in splotches",
       "dateFinished": "2020-06-23",
-      "id": 34
+      "id": 34,
+      "private": false
     },
     {
       "potterId": 1,
@@ -542,7 +569,8 @@
       "glaze3Id": null,
       "glazeDetails": "dipped",
       "dateFinished": "2020-05-03",
-      "id": 35
+      "id": 35,
+      "private": false
     },
     {
       "id": 36,
@@ -559,7 +587,8 @@
       "glaze2Id": 1,
       "glaze3Id": 4,
       "glazeDetails": "3x brushed",
-      "dateFinished": "2020-04-03"
+      "dateFinished": "2020-04-03",
+      "private": false
     },
     {
       "potterId": 6,
@@ -576,7 +605,8 @@
       "glaze3Id": 3,
       "glazeDetails": "Dipped sapphire then brushed/dripped others,  heavy on the rutile",
       "dateFinished": "",
-      "id": 37
+      "id": 37,
+      "private": false
     },
     {
       "potterId": 6,
@@ -593,7 +623,8 @@
       "glaze3Id": 5,
       "glazeDetails": "Dipped oatmeal. Brushed x3 other glazes.",
       "dateFinished": "2018-12-16",
-      "id": 38
+      "id": 38,
+      "private": false
     },
     {
       "potterId": 3,
@@ -610,7 +641,8 @@
       "glaze3Id": 3,
       "glazeDetails": "Mulberry and ancient copper x3 brushed, oatmeal glopped between the 2",
       "dateFinished": "2020-04-29",
-      "id": 39
+      "id": 39,
+      "private": false
     },
     {
       "potterId": 3,
@@ -627,7 +659,8 @@
       "glaze3Id": null,
       "glazeDetails": "5x brushed rutile, 3x brushed copper",
       "dateFinished": "2019-09-11",
-      "id": 40
+      "id": 40,
+      "private": false
     },
     {
       "potterId": 3,
@@ -644,7 +677,8 @@
       "glaze3Id": null,
       "glazeDetails": "3x brushed",
       "dateFinished": "2020-04-15",
-      "id": 41
+      "id": 41,
+      "private": false
     },
     {
       "potterId": 3,
@@ -661,7 +695,8 @@
       "glaze3Id": null,
       "glazeDetails": "3x sapphire, iron yellow drizzled around top",
       "dateFinished": "2019-12-20",
-      "id": 42
+      "id": 42,
+      "private": false
     },
     {
       "potterId": 3,
@@ -678,7 +713,8 @@
       "glaze3Id": null,
       "glazeDetails": "3x brushed",
       "dateFinished": "2019-01-21",
-      "id": 43
+      "id": 43,
+      "private": false
     },
     {
       "potterId": 8,
@@ -695,7 +731,8 @@
       "glaze3Id": 16,
       "glazeDetails": "Criss crossed mountain mist on edges",
       "dateFinished": "2020-05-05",
-      "id": 44
+      "id": 44,
+      "private": false
     },
     {
       "id": 45,
@@ -712,11 +749,13 @@
       "glaze2Id": 3,
       "glaze3Id": null,
       "glazeDetails": "heavy oatmeal on edges",
-      "dateFinished": "2020-05-05"
+      "dateFinished": "2020-05-05",
+      "private": false
     },
     {
-      "potterId": 8,
+      "id": 46,
       "name": "Captains Mug",
+      "potterId": 8,
       "preFireImg": "https://res.cloudinary.com/michellemb/image/upload/v1593121761/GlazeProject/duprkecvjnnkvh1k4gad.jpg",
       "finishedImg": "https://res.cloudinary.com/michellemb/image/upload/v1593121781/GlazeProject/pfnd05slyzdmyuasiwox.jpg",
       "clayId": 4,
@@ -728,8 +767,8 @@
       "glaze2Id": 4,
       "glaze3Id": 5,
       "glazeDetails": "3x brushed",
-      "dateFinished": "2020-05-05",
-      "id": 46
+      "dateFinished": "2020-05-06",
+      "private": false
     },
     {
       "potterId": 12,
@@ -746,7 +785,8 @@
       "glaze3Id": 4,
       "glazeDetails": "3x brushed",
       "dateFinished": "2020-02-07",
-      "id": 47
+      "id": 47,
+      "private": false
     },
     {
       "potterId": 12,
@@ -763,7 +803,8 @@
       "glaze3Id": 15,
       "glazeDetails": "Oatmeal dipped. Heavy drips of others",
       "dateFinished": "2020-03-05",
-      "id": 48
+      "id": 48,
+      "private": false
     },
     {
       "potterId": 12,
@@ -780,7 +821,8 @@
       "glaze3Id": 4,
       "glazeDetails": "3x brushed",
       "dateFinished": "2020-06-12",
-      "id": 49
+      "id": 49,
+      "private": false
     },
     {
       "potterId": 12,
@@ -797,7 +839,8 @@
       "glaze3Id": 6,
       "glazeDetails": "x3 brushed",
       "dateFinished": "2020-05-12",
-      "id": 50
+      "id": 50,
+      "private": false
     },
     {
       "potterId": 12,
@@ -814,7 +857,8 @@
       "glaze3Id": 5,
       "glazeDetails": "dipped blue rutile, sapphire and green alternated around jar",
       "dateFinished": "2020-06-07",
-      "id": 51
+      "id": 51,
+      "private": false
     }
   ],
   "firingEnvironments": [
