@@ -40,6 +40,6 @@ CSS styling
 Modular code
 
 <h3>ERD</h3>
-![ERD](./ERD.png)
+![ERD](/ERD.png)
 
 
