@@ -40,4 +40,6 @@ CSS styling
 Modular code
 
 <h3>ERD</h3>
-<img className="erd" src={require("./ERD.png")} alt="erd" />
+![ERD](./ERD.png)
+
+
