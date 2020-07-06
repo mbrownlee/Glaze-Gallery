@@ -28,6 +28,7 @@ const PotForm = (props) => {
     glaze3Id: "",
     glazeDetails: "",
     dateFinished: "",
+    private: false,
   });
   const [clays, setClays] = useState([]);
   const [techniques, setTechniques] = useState([]);
@@ -35,6 +36,7 @@ const PotForm = (props) => {
   const [glazes, setGlazes] = useState([]);
   const [image, setImage] = useState("");
   const [image2, setImage2] = useState("");
+  
 
   const getClays = () => {
     return API.getClays().then((clays) => {
@@ -93,6 +95,7 @@ const PotForm = (props) => {
       glaze3Id: parseInt(pot.glaze3Id),
       glazeDetails: pot.glazeDetails,
       dateFinished: pot.dateFinished,
+      private: pot.private === "true" ? true : false,
     };
     API.createNewPot(newPot).then(() => 
       props.history.push(`/potters/${localStorage.getItem("currentPotter")}`)
@@ -115,6 +118,7 @@ const PotForm = (props) => {
     glaze3Id: parseInt(pot.glaze3Id),
     glazeDetails: pot.glazeDetails,
     dateFinished: pot.dateFinished,
+    private: pot.private === "true" ? true : false,
   };
   const updateExistingPot = (evt) => {
     API.updateExistingPot(editedPot).then(() => props.history.push(`/potters/${localStorage.getItem("currentPotter")}`));
@@ -348,6 +352,18 @@ const PotForm = (props) => {
             value={pot.finishedImg}
             setImage={setImage}
           />
+        </Col>
+      </FormGroup>
+      <FormGroup row>
+        <Label for="select" sm={2}>Keep Private?</Label>
+        <Col sm={10}>
+        <Input type="select" name="private" id="private" value={pot.private}>
+          <option value="false">No</option>
+          <option value="true">Yes</option>
+        </Input>
+        <FormText color="black">
+            Selecting "Yes" means the details of your pot will not be visible to the community. Other potters will only see your finished photo and name.
+          </FormText>
         </Col>
       </FormGroup>
       <FormGroup check row>

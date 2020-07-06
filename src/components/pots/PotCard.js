@@ -30,7 +30,10 @@ const PotCard = (props) => {
           </CardTitle>
           <CardSubtitle>{artistName}</CardSubtitle>
           <div className="button--details">
-          <Button  href={`/pots/${props.pot.id}`}>Pot Details</Button>{" "}
+          {props.pot.private === false ?
+         
+          <Button  href={`/pots/${props.pot.id}`}>Pot Details</Button>: null }
+          
 
           </div>
         </CardBody>
