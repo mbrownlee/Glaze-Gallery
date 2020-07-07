@@ -12,19 +12,19 @@ const NavBar = (props) => {
   
   return (
     <div>
-    {/* <img className="logo" src={require("./logo.png")} alt="pot" /> */}
+    
       <h1 className="nav-title">Glaze Gallery</h1>
       <Nav className="nav-links">
             {currentPotter ? 
-        <NavLink className="nav-item" href={`/potters/${currentPotter}`} active>
+        <NavLink className="nav-item" href={`/potters/${currentPotter}`}>
           <h3>My Pots</h3>
         </NavLink> : null }
         {currentPotter ? 
-        <NavLink className="nav-item" href="/pots" active>
+        <NavLink className="nav-item" href="/pots">
          <h3>Gallery</h3> 
         </NavLink> : null }
         {currentPotter ? 
-        <NavLink className="nav-item" onClick={handleLogout} href="/" active>
+        <NavLink className="nav-item" onClick={handleLogout} href="/">
          <h3>Logout</h3> 
         </NavLink> : null }
         
